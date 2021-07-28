@@ -1,9 +1,12 @@
 import React from "react"
+import { useParams } from "react-router-dom"
 
 export default function ChatPage() {
+   const params = useParams().title
+
    return (
       <div>
-         <h2>Welcome to -Title of CHATROOM-</h2>
+         <h2>Welcome to -Title of {params}-</h2>
          <h3>Description: This channel is about -description of chat-</h3>
          <h3>Location: This channel is based in -location-</h3>
          <h3>For further questions please reach out to channel admin: -useradmin-</h3>

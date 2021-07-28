@@ -5,13 +5,20 @@ export default function SignUpPage() {
       <div>
          <h2>Sign Up!</h2>
          <form>
-            <label htmlFor="email">Email</label>
-            <input type="text" name="email" placeholder="Email Address" />
-            <label htmlFor="password">Password</label>
+            <label htmlFor="name">Name: </label>
+            <input autocomplete="name" type="text" name="name" placeholder="Name" />
+            <label htmlFor="email">Email: </label>
+            <input autocomplete="email" type="text" name="email" placeholder="Email Address" />
+            <label htmlFor="password">Password: </label>
             <input type="password" name="password" placeholder="Password" />
-            <label htmlFor="confirmPassword">Confirm Password</label>
-            <input type="password" name="confirmPassword" placeholder="Re-enter your password" />
-            <label htmlFor="ageGroup">Select Age Group</label>
+            <label htmlFor="confirmPassword">Confirm Password: </label>
+            <input
+               autocomplete="password"
+               type="password"
+               name="confirmPassword"
+               placeholder="Re-enter your password"
+            />
+            <label htmlFor="ageGroup">Select Age Group: </label>
             <select name="ageGroup">
                Age Group
                <option>--select one--</option>
