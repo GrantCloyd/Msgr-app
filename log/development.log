@@ -408,3 +408,757 @@ Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 13:31:19 -0500
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateChats (20210728155941)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.2ms)[0m  [1m[35mDROP TABLE "chats"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210728155941"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20210728155825)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mDROP TABLE "messages"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210728155825"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210728153314)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210728153314"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210728153314)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(948085633385746275)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210728153314)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (26.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "bio" text DEFAULT NULL, "image_url" text DEFAULT 'https://clipground.com/images/avatar-clipart-free-6.png', "age_group" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210728153314"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMessages (20210728155825)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" text, "user_id" integer, "chat_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210728155825"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateChats (20210728155941)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "chats" ("id" bigserial primary key, "title" character varying, "description" text, "location" character varying, "age_group" character varying, "admin_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210728155941"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(948085633385746275)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "grant@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "age_group", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Grant"], ["email", "grant@email.com"], ["password_digest", "$2a$12$3n71oJuJwmsPetVgtqkH1.5FtB31cJ5hbrOCtPmuCVSjR21jbxOTy"], ["age_group", "Adult"], ["created_at", "2021-07-28 20:11:11.119027"], ["updated_at", "2021-07-28 20:11:11.119027"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for ::1 at 2021-07-28 15:18:41 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.86ms)
+Completed 200 OK in 49ms (Views: 29.4ms | ActiveRecord: 6.0ms | Allocations: 11281)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-07-28 15:18:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 15:48:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 15:48:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 15:58:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 16:00:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started OPTIONS "/users" for ::1 at 2021-07-28 16:08:53 -0500
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/users"):
+  
+Started OPTIONS "/users" for ::1 at 2021-07-28 16:17:12 -0500
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/users"):
+  
+Started OPTIONS "/users" for ::1 at 2021-07-28 16:22:29 -0500
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/users"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 16:22:54 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for ::1 at 2021-07-28 16:24:54 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 2.5ms | Allocations: 4652)
+
+
+  
+NameError (undefined local variable or method `user_parms' for #<UsersController:0x00000000006ce8>
+Did you mean?  user_params
+               user_path):
+  
+app/controllers/users_controller.rb:9:in `create'
+Started POST "/users" for ::1 at 2021-07-28 16:28:07 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "j"], ["email", "j@j.com"], ["password_digest", "$2a$12$9RbJpJ6u/MBP.Ru4FZE2Re52DZI6.ekUB010W1sA4v6GLULUPF77q"], ["created_at", "2021-07-28 21:28:07.692799"], ["updated_at", "2021-07-28 21:28:07.692799"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 201 Created in 280ms (Views: 6.7ms | ActiveRecord: 7.1ms | Allocations: 8472)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:29:25 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 277ms (Views: 6.2ms | ActiveRecord: 0.8ms | Allocations: 6735)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:34:24 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 269ms (Views: 0.5ms | ActiveRecord: 0.9ms | Allocations: 2589)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 16:34:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for ::1 at 2021-07-28 16:35:13 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 249ms (Views: 1.2ms | ActiveRecord: 0.9ms | Allocations: 2563)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:35:16 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 267ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 2563)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:35:55 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 264ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 2569)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:36:27 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 261ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 2589)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:36:36 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"j", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"j", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 251ms (Views: 1.1ms | ActiveRecord: 0.8ms | Allocations: 2563)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:38:20 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 250ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 2570)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:38:29 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "email"=>"ja@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"", "email"=>"ja@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ja@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", ""], ["email", "ja@j.com"], ["password_digest", "$2a$12$kt0Ce6IJLdkrCGE1bqv7PO20dJiJBO47gmH5iW7vzIlqAVM5C4gP6"], ["created_at", "2021-07-28 21:38:29.842272"], ["updated_at", "2021-07-28 21:38:29.842272"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 201 Created in 267ms (Views: 0.9ms | ActiveRecord: 1.6ms | Allocations: 2813)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:40:50 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "email"=>"ja@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"", "email"=>"ja@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ja@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 266ms (Views: 0.5ms | ActiveRecord: 9.3ms | Allocations: 6167)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:40:55 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "email"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"", "email"=>""}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 422 Unprocessable Entity in 264ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 2998)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:42:15 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "email"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"--select one--", "user"=>{"name"=>"", "email"=>""}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 422 Unprocessable Entity in 260ms (Views: 0.5ms | ActiveRecord: 8.5ms | Allocations: 7453)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:43:11 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "email"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"--select one--", "user"=>{"name"=>"", "email"=>""}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 422 Unprocessable Entity in 261ms (Views: 0.6ms | ActiveRecord: 5.0ms | Allocations: 7853)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:44:22 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"jay", "email"=>"j@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"family", "user"=>{"name"=>"jay", "email"=>"j@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "j@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 259ms (Views: 0.5ms | ActiveRecord: 8.4ms | Allocations: 6620)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 16:45:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for ::1 at 2021-07-28 16:46:36 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jay", "email"=>"jj@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"Family", "user"=>{"name"=>"Jay", "email"=>"jj@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 267ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 3063)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:46:53 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jay", "email"=>"jj@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"Family", "user"=>{"name"=>"Jay", "email"=>"jj@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 255ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 3062)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:47:55 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jay", "email"=>"jj@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"Family", "user"=>{"name"=>"Jay", "email"=>"jj@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 255ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 3062)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:47:58 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jay", "email"=>"jj@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"Family", "user"=>{"name"=>"Jay", "email"=>"jj@j.com"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 253ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 3063)
+
+
+Started POST "/users" for ::1 at 2021-07-28 16:49:14 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jay", "email"=>"jj@j.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "ageGroup"=>"Family", "age_group"=>"Family", "user"=>{"name"=>"Jay", "email"=>"jj@j.com", "age_group"=>"Family"}}
+[31mUnpermitted parameters: :confirmPassword, :ageGroup, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "age_group", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jay"], ["email", "jj@j.com"], ["password_digest", "$2a$12$tBSmzxv2c.xNDA.1f4PZC.JKzLYMYh.Hrd/f6oT1zedqR4spqm2WW"], ["age_group", "Family"], ["created_at", "2021-07-28 21:49:15.211831"], ["updated_at", "2021-07-28 21:49:15.211831"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 267ms (Views: 4.5ms | ActiveRecord: 1.8ms | Allocations: 4344)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 16:49:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 16:56:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-28 16:57:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:07:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for ::1 at 2021-07-28 17:10:47 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jessie", "email"=>"", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"Family", "user"=>{"name"=>"Jessie", "email"=>"", "age_group"=>"Family"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 274ms (Views: 0.4ms | ActiveRecord: 7.0ms | Allocations: 4680)
+
+
+Started POST "/users" for ::1 at 2021-07-28 17:11:38 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"jays", "email"=>"word@email.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"Adult", "user"=>{"name"=>"jays", "email"=>"word@email.com", "age_group"=>"Adult"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "word@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 261ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 2632)
+
+
+Started POST "/users" for ::1 at 2021-07-28 17:12:41 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jessie", "email"=>"jj@lob.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"Adult", "user"=>{"name"=>"Jessie", "email"=>"jj@lob.com", "age_group"=>"Adult"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@lob.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 256ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 2633)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-28 17:13:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started POST "/users" for ::1 at 2021-07-28 17:13:27 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jessie", "email"=>"asdas@", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"Family", "user"=>{"name"=>"Jessie", "email"=>"asdas@", "age_group"=>"Family"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asdas@"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "age_group", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jessie"], ["email", "asdas@"], ["password_digest", "$2a$12$Il95S/MqlXiL03t2Z6TlMuBgtu7pFbwaHtOptqtxQbJxPsSWAB4sa"], ["age_group", "Family"], ["created_at", "2021-07-28 22:13:27.914328"], ["updated_at", "2021-07-28 22:13:27.914328"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 201 Created in 270ms (Views: 0.7ms | ActiveRecord: 2.2ms | Allocations: 2886)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:13:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-28 17:24:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:25:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-28 17:25:49 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 201 Created in 270ms (Views: 0.7ms | ActiveRecord: 10.0ms | Allocations: 2985)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:26:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-28 17:26:07 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 256ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 630)
+
+
+Started POST "/log_in" for ::1 at 2021-07-28 17:26:09 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 200 OK in 252ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 631)
+
+
+Started POST "/log_in" for ::1 at 2021-07-28 17:26:10 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 264ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 649)
+
+
+Started POST "/log_in" for ::1 at 2021-07-28 17:26:10 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 261ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 643)
+
+
+Started POST "/log_in" for ::1 at 2021-07-28 17:27:48 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 267ms (Views: 0.5ms | ActiveRecord: 12.6ms | Allocations: 6334)
+
+
+Started POST "/log_in" for ::1 at 2021-07-28 17:27:58 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 200 OK in 239ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 630)
+
+
+Started POST "/log_in" for ::1 at 2021-07-28 17:28:29 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 201 Created in 264ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 2207)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-28 17:31:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-28 17:31:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:34:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:34:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:35:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:35:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:35:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-28 17:35:16 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 200 OK in 269ms (Views: 0.6ms | ActiveRecord: 8.9ms | Allocations: 2759)
+
+
+Started POST "/log_in" for ::1 at 2021-07-28 17:35:22 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 257ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 736)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:36:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-28 17:36:34 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 201 Created in 279ms (Views: 1.2ms | ActiveRecord: 8.4ms | Allocations: 6688)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:37:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-28 17:37:59 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 201 Created in 269ms (Views: 1.4ms | ActiveRecord: 6.4ms | Allocations: 6590)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:38:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-28 17:38:25 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 201 Created in 271ms (Views: 1.2ms | ActiveRecord: 8.0ms | Allocations: 6514)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:42:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:42:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  

@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2021_07_28_155941) do
     t.string "email"
     t.string "password_digest"
     t.text "bio"
-    t.text "image_url"
+    t.text "image_url", default: "https://clipground.com/images/avatar-clipart-free-6.png"
     t.string "age_group"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

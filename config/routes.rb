@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :log_in
   resources :chats
   resources :messages
   resources :users
