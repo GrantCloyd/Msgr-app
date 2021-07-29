@@ -2,14 +2,19 @@ import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
 import App from "./App"
+import { API_WS_ROOT } from "./constants"
+
 import { BrowserRouter } from "react-router-dom"
+import { ActionCableProvider } from "react-actioncable-provider"
 import reportWebVitals from "./reportWebVitals"
 
 ReactDOM.render(
    <React.StrictMode>
-      <BrowserRouter>
-         <App />
-      </BrowserRouter>
+      <ActionCableProvider url={API_WS_ROOT}>
+         <BrowserRouter>
+            <App />
+         </BrowserRouter>
+      </ActionCableProvider>
    </React.StrictMode>,
    document.getElementById("root")
 )

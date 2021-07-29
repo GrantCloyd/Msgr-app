@@ -37,7 +37,7 @@ function App() {
                path="/find"
                component={() => <ChatList userAgeGroup={user.age_group} userName={user.name} />}
             />
-            <Route path="/chat/:title/:id" component={ChatPage} />
+            <Route path="/chat/:title/:id" component={() => <ChatPage userId={user.id} />} />
             <hr />
             <Route path="/profile/:id" component={() => <ProfilePage {...user} />} />
          </div>

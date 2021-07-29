@@ -11,6 +11,7 @@ export async function handleCreate(newObj, path, errorHandler, successHandler) {
       headers: HEADERS,
       body: JSON.stringify(newObj),
    })
+
    const data = await res.json()
    if (data.id) {
       successHandler(data)
