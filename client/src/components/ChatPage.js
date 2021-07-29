@@ -1,16 +1,40 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { API_ROOT } from "../constants"
 
 export default function ChatPage() {
-   const params = useParams().title
+   const { title, id } = useParams()
+   const initialState = {
+      admin: { name: "" },
+   }
+   const [roomInfo, setRoomInfo] = useState(initialState)
+
+   useEffect(() => {
+      async function getData() {
+         const res = await fetch(`${API_ROOT}/chats/${id}`)
+         const data = await res.json()
+         setRoomInfo(data)
+         console.log(data)
+      }
+      getData()
+   }, [])
+
+   console.log(title)
 
    return (
       <div>
-         <h2>Welcome to -Title of {params}-</h2>
-         <h3>Description: This channel is about -description of chat-</h3>
-         <h3>Location: This channel is based in -location-</h3>
-         <h3>For further questions please reach out to channel admin: -useradmin-</h3>
-         <h3>This channel is for Adult/Family</h3>
+         <h2>Welcome to - {roomInfo.title} Chat Room - </h2>
+         <p>Description: {roomInfo.description}</p>
+         <h3>Location: This channel is based in {roomInfo.location} </h3>
+         <h3>
+            For further questions please reach out to channel admin: {roomInfo.admin.name} at{" "}
+            <a href={`mailto:${roomInfo.admin.email}`}>{roomInfo.admin.email}</a>
+         </h3>
+         <h3>
+            {roomInfo.age_group === "Family"
+               ? "This room is intended for all ages"
+               : "This room is not intended for young children"}
+         </h3>
          <ul>
             {" "}
             Users In Chatroom Now:

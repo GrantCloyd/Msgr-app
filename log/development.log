@@ -1162,3 +1162,2434 @@ Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:42:17 -0500
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:48:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:48:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:48:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:48:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:48:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:48:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:48:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-28 17:48:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 07:56:21 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 07:59:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:00:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 08:00:37 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 201 Created in 280ms (Views: 3.3ms | ActiveRecord: 7.8ms | Allocations: 11016)
+
+
+Started POST "/log_in" for ::1 at 2021-07-29 08:01:17 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 201 Created in 265ms (Views: 1.0ms | ActiveRecord: 0.8ms | Allocations: 824)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:02:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:03:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:05:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 08:05:24 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 252ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 802)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:05:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:05:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:05:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:05:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:08:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 08:08:55 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.84ms)
+Completed 201 Created in 268ms (Views: 2.6ms | ActiveRecord: 6.8ms | Allocations: 6632)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:09:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:11:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:12:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 08:12:04 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 201 Created in 261ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 803)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:13:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:16:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:24:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:34:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:34:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:34:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:34:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:37:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 08:37:21 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 201 Created in 276ms (Views: 1.3ms | ActiveRecord: 8.6ms | Allocations: 8425)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:37:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/chats" for ::1 at 2021-07-29 08:37:40 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4}}
+[31mUnpermitted parameter: :chat[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "This new coffee"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Create (3.7ms)[0m  [1m[32mINSERT INTO "chats" ("title", "description", "location", "age_group", "admin_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "This new coffee"], ["description", "This is a great coffee that you should love"], ["location", "TX"], ["age_group", "Family"], ["admin_id", 4], ["created_at", "2021-07-29 13:37:40.504075"], ["updated_at", "2021-07-29 13:37:40.504075"]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 13.1ms | Allocations: 8020)
+
+
+  
+NameError (undefined local variable or method `chat' for #<ChatsController:0x0000000000b568>):
+  
+app/controllers/chats_controller.rb:6:in `create'
+Started POST "/chats" for ::1 at 2021-07-29 08:37:42 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4}}
+[31mUnpermitted parameter: :chat[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "This new coffee"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 23ms (Views: 1.2ms | ActiveRecord: 0.8ms | Allocations: 4828)
+
+
+Started POST "/chats" for ::1 at 2021-07-29 08:37:43 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4}}
+[31mUnpermitted parameter: :chat[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "This new coffee"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 2528)
+
+
+Started POST "/chats" for ::1 at 2021-07-29 08:37:43 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4}}
+[31mUnpermitted parameter: :chat[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "This new coffee"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 0.6ms | ActiveRecord: 0.8ms | Allocations: 2524)
+
+
+Started POST "/chats" for ::1 at 2021-07-29 08:37:43 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"This new coffee", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4}}
+[31mUnpermitted parameter: :chat[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "This new coffee"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 2546)
+
+
+Started POST "/chats" for ::1 at 2021-07-29 08:43:31 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"This new coffe", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"This new coffe", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4}}
+[31mUnpermitted parameter: :chat[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "This new coffe"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Create (0.6ms)[0m  [1m[32mINSERT INTO "chats" ("title", "description", "location", "age_group", "admin_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "This new coffe"], ["description", "This is a great coffee that you should love"], ["location", "TX"], ["age_group", "Family"], ["admin_id", 4], ["created_at", "2021-07-29 13:43:31.570060"], ["updated_at", "2021-07-29 13:43:31.570060"]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 10.3ms | Allocations: 6670)
+
+
+  
+NameError (undefined local variable or method `chat' for #<ChatsController:0x0000000000b7c0>):
+  
+app/controllers/chats_controller.rb:6:in `create'
+Started POST "/chats" for ::1 at 2021-07-29 08:45:09 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"This new c", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"This new c", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "This new c"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Create (0.3ms)[0m  [1m[32mINSERT INTO "chats" ("title", "description", "location", "age_group", "admin_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "This new c"], ["description", "This is a great coffee that you should love"], ["location", "TX"], ["age_group", "Family"], ["admin_id", 4], ["created_at", "2021-07-29 13:45:09.396179"], ["updated_at", "2021-07-29 13:45:09.396179"]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 9.9ms | Allocations: 7603)
+
+
+  
+NameError (undefined local variable or method `chat' for #<ChatsController:0x0000000000ce90>):
+  
+app/controllers/chats_controller.rb:6:in `create'
+Started POST "/chats" for ::1 at 2021-07-29 08:46:05 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"This ne", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"This ne", "description"=>"This is a great coffee that you should love", "location"=>"TX", "age_group"=>"Family", "admin_id"=>4}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "This ne"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mChat Create (0.3ms)[0m  [1m[32mINSERT INTO "chats" ("title", "description", "location", "age_group", "admin_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "This ne"], ["description", "This is a great coffee that you should love"], ["location", "TX"], ["age_group", "Family"], ["admin_id", 4], ["created_at", "2021-07-29 13:46:05.195363"], ["updated_at", "2021-07-29 13:46:05.195363"]]
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/chats_controller.rb:5:in `create'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 201 Created in 15ms (Views: 1.8ms | ActiveRecord: 5.8ms | Allocations: 6053)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:46:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" ORDER BY "chats"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats" ORDER BY "chats"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mChat Load (0.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."admin_id" = $1 /* loading for inspect */ LIMIT $2[0m  [["admin_id", 4], ["LIMIT", 11]]
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:55:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 08:55:48 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.88ms)
+Completed 200 OK in 41ms (Views: 32.9ms | ActiveRecord: 12.4ms | Allocations: 8213)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 08:59:24 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 875)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 08:59:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:00:07 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:00:07 -0500
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 40ms (Views: 15.1ms | ActiveRecord: 16.2ms | Allocations: 6383)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:00:30 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:00:30 -0500
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 26ms (Views: 10.2ms | ActiveRecord: 10.6ms | Allocations: 6080)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats" ORDER BY "chats"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/chats" for ::1 at 2021-07-29 09:04:44 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:04:44 -0500
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.13ms)
+Completed 200 OK in 57ms (Views: 34.9ms | ActiveRecord: 16.7ms | Allocations: 14232)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:08:38 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:08:38 -0500
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.5ms)
+Completed 200 OK in 59ms (Views: 33.5ms | ActiveRecord: 18.3ms | Allocations: 13241)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:09:57 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:09:57 -0500
+  [1m[36mChat Load (0.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 7.7ms | Allocations: 5996)
+
+
+  
+SyntaxError (/Users/grant/flatiron/code/mod4/Project/Msger/app/serializers/chat_serializer.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+  belongs_to :admin, serializer: UserSerial...
+             ^
+):
+  
+app/serializers/chat_serializer.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/serializers/chat_serializer.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:11:14 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:11:14 -0500
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.32ms)
+Completed 200 OK in 78ms (Views: 55.2ms | ActiveRecord: 16.2ms | Allocations: 14999)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:11:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 09:11:43 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 201 Created in 268ms (Views: 1.2ms | ActiveRecord: 5.6ms | Allocations: 7021)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:11:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:12:51 -0500
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:12:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.41ms)
+Completed 200 OK in 26ms (Views: 14.4ms | ActiveRecord: 7.4ms | Allocations: 7102)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:13:45 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.39ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.7ms | Allocations: 1881)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:20:05 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.19ms)
+Completed 200 OK in 28ms (Views: 28.2ms | ActiveRecord: 13.2ms | Allocations: 4058)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:20:35 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.94ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.9ms | Allocations: 1882)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:20:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:21:01 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:21:01 -0500
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.12ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.5ms | Allocations: 2555)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:21:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:21:14 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:21:14 -0500
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.82ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 1.4ms | Allocations: 2597)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:21:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/chats" for ::1 at 2021-07-29 09:21:41 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"Magic The Gathering", "description"=>"We're going to talk about cards", "location"=>"NY", "age_group"=>"Adult", "admin_id"=>4, "chat"=>{"title"=>"Magic The Gathering", "description"=>"We're going to talk about cards", "location"=>"NY", "age_group"=>"Adult", "admin_id"=>4}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+  [1m[36mChat Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "Magic The Gathering"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+  [1m[36mChat Create (0.8ms)[0m  [1m[32mINSERT INTO "chats" ("title", "description", "location", "age_group", "admin_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Magic The Gathering"], ["description", "We're going to talk about cards"], ["location", "NY"], ["age_group", "Adult"], ["admin_id", 4], ["created_at", "2021-07-29 14:21:41.473185"], ["updated_at", "2021-07-29 14:21:41.473185"]]
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 201 Created in 12ms (Views: 1.2ms | ActiveRecord: 3.0ms | Allocations: 3840)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:21:41 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:21:41 -0500
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.42ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 1.8ms | Allocations: 3670)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:23:14 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:14 -0500
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.0ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 1.7ms | Allocations: 3621)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:23:20 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:20 -0500
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.27ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 1.2ms | Allocations: 3667)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:23:32 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:32 -0500
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.0ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.7ms | Allocations: 3667)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:23:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:24:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 09:24:25 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 201 Created in 266ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 797)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:24:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:24:33 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:24:33 -0500
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.39ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 1.7ms | Allocations: 3667)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:24:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:24:41 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:24:41 -0500
+  [1m[36mChat Load (0.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.23ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 2.4ms | Allocations: 3652)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:24:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:24:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:48:36 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:48:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.89ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 11.3ms | Allocations: 5791)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:49:38 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.42ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 1.6ms | Allocations: 2951)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:49:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:49:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 09:49:47 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 250ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 797)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:49:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/chats" for ::1 at 2021-07-29 09:50:09 -0500
+Processing by ChatsController#create as JSON
+  Parameters: {"title"=>"Birds", "description"=>"asdasjdhaskdhaksdhkasdjhklajshdlkajhdlkasjdhkljahdlkjashdlkjashdlasjkdhlaskjdhlkjdhaskljdhaslkjdhalkjdhaslkdjhaslkdjhasljkdhaskljhdsa", "location"=>"THE MOOON ASDKLNASLDKJSAASD", "age_group"=>"Family", "admin_id"=>4, "chat"=>{"title"=>"Birds", "description"=>"asdasjdhaskdhaksdhkasdjhklajshdlkajhdlkasjdhkljahdlkjashdlkjashdlasjkdhlaskjdhlkjdhaskljdhaslkjdhalkjdhaslkdjhaslkdjhasljkdhaskljhdsa", "location"=>"THE MOOON ASDKLNASLDKJSAASD", "age_group"=>"Family", "admin_id"=>4}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+  [1m[36mChat Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "chats" WHERE "chats"."title" = $1 LIMIT $2[0m  [["title", "Birds"], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+  [1m[36mChat Create (0.9ms)[0m  [1m[32mINSERT INTO "chats" ("title", "description", "location", "age_group", "admin_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Birds"], ["description", "asdasjdhaskdhaksdhkasdjhklajshdlkajhdlkasjdhkljahdlkjashdlkjashdlasjkdhlaskjdhlkjdhaskljdhaslkjdhalkjdhaslkdjhaslkdjhasljkdhaskljhdsa"], ["location", "THE MOOON ASDKLNASLDKJSAASD"], ["age_group", "Family"], ["admin_id", 4], ["created_at", "2021-07-29 14:50:09.049797"], ["updated_at", "2021-07-29 14:50:09.049797"]]
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/chats_controller.rb:9:in `create'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 201 Created in 13ms (Views: 1.0ms | ActiveRecord: 3.1ms | Allocations: 3657)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:50:09 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:50:09 -0500
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.08ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 1.9ms | Allocations: 4739)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:50:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:50:50 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:50:50 -0500
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.27ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 2.4ms | Allocations: 4738)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:51:06 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.22ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.9ms | Allocations: 4023)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:54:23 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.52ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.5ms | Allocations: 4023)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:55:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 09:55:14 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 09:55:14 -0500
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.63ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 2.3ms | Allocations: 4687)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:57:07 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.51ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.7ms | Allocations: 4022)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:58:44 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.58ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.9ms | Allocations: 4022)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 09:59:48 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.01ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.8ms | Allocations: 4022)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-29 10:01:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:01:17 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.9ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.7ms | Allocations: 4021)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:02:06 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 1.0ms | Allocations: 4022)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:02:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:04:12 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.33ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.6ms | Allocations: 4021)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:04:14 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.35ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.9ms | Allocations: 4022)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:04:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:04:59 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.63ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 1.6ms | Allocations: 4021)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-29 10:07:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:07:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:09:29 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.33ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 1.2ms | Allocations: 4021)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:09:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:12:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:12:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for ::1 at 2021-07-29 10:12:49 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Grant", "email"=>"grant@email.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"Adult", "user"=>{"name"=>"Grant", "email"=>"grant@email.com", "age_group"=>"Adult"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "grant@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 249ms (Views: 0.7ms | ActiveRecord: 0.8ms | Allocations: 3050)
+
+
+Started POST "/users" for ::1 at 2021-07-29 10:13:15 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Grant", "email"=>"grant@email.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"Adult", "user"=>{"name"=>"Grant", "email"=>"grant@email.com", "age_group"=>"Adult"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "grant@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 260ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 2641)
+
+
+Started POST "/users" for ::1 at 2021-07-29 10:14:07 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Grant", "email"=>"grant@email.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"Adult", "user"=>{"name"=>"Grant", "email"=>"grant@email.com", "age_group"=>"Adult"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "grant@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "age_group", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Grant"], ["email", "grant@email.com"], ["password_digest", "$2a$12$0jDa796agDUoZxygfZsemODUzUmSzOK9mihgX0E6WCpAK5jDjMhHi"], ["age_group", "Adult"], ["created_at", "2021-07-29 15:14:07.332645"], ["updated_at", "2021-07-29 15:14:07.332645"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 201 Created in 263ms (Views: 1.8ms | ActiveRecord: 11.7ms | Allocations: 6644)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:14:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 10:14:13 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"grant@email.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"grant@email.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "grant@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 248ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 919)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:14:15 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:14:15 -0500
+  [1m[36mChat Load (0.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.37ms)
+Completed 200 OK in 33ms (Views: 21.5ms | ActiveRecord: 7.5ms | Allocations: 9962)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:14:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:15:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:15:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 10:16:01 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 201 Created in 266ms (Views: 1.5ms | ActiveRecord: 5.9ms | Allocations: 7062)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:16:05 -0500
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:16:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.58ms)
+Completed 200 OK in 31ms (Views: 19.2ms | ActiveRecord: 7.5ms | Allocations: 9239)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:16:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:16:09 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:16:09 -0500
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.77ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 1.1ms | Allocations: 4722)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:19:53 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.49ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.6ms | Allocations: 4022)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:19:58 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.01ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 1.6ms | Allocations: 4024)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:19:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:22:29 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.11ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 2.4ms | Allocations: 4021)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:22:34 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.87ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 1.4ms | Allocations: 4022)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:22:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:22:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for ::1 at 2021-07-29 10:23:09 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Gorb", "email"=>"g@g.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"--select one--", "user"=>{"name"=>"Gorb", "email"=>"g@g.com", "age_group"=>"--select one--"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 422 Unprocessable Entity in 254ms (Views: 0.6ms | ActiveRecord: 0.8ms | Allocations: 2863)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:25:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for ::1 at 2021-07-29 10:26:52 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Glorb", "email"=>"g@g.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"--select one--", "user"=>{"name"=>"Glorb", "email"=>"g@g.com", "age_group"=>"--select one--"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 253ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 2534)
+
+
+Started POST "/users" for ::1 at 2021-07-29 10:28:37 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"ggg", "email"=>"g@g.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"--select one--", "user"=>{"name"=>"ggg", "email"=>"g@g.com", "age_group"=>"--select one--"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Completed 422 Unprocessable Entity in 254ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 2534)
+
+
+Started POST "/users" for ::1 at 2021-07-29 10:31:08 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"ggg", "email"=>"g@g.com", "password"=>"[FILTERED]", "confirmPassword"=>"[FILTERED]", "age_group"=>"Adult", "user"=>{"name"=>"ggg", "email"=>"g@g.com", "age_group"=>"Adult"}}
+[31mUnpermitted parameters: :confirmPassword, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "age_group", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "ggg"], ["email", "g@g.com"], ["password_digest", "$2a$12$wn3/hvuxxg7QTT0ipIygLuSLIqRweBJfvE93YuZv5U6IQXMVIDSMy"], ["age_group", "Adult"], ["created_at", "2021-07-29 15:31:09.125581"], ["updated_at", "2021-07-29 15:31:09.125581"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.63ms)
+Completed 201 Created in 258ms (Views: 1.6ms | ActiveRecord: 2.0ms | Allocations: 2933)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:31:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 10:31:23 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.om", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.om", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.om"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 588)
+
+
+Started POST "/log_in" for ::1 at 2021-07-29 10:31:33 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 201 Created in 261ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 795)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:31:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:31:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:33:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 10:34:00 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 201 Created in 254ms (Views: 1.1ms | ActiveRecord: 0.5ms | Allocations: 793)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:34:12 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:34:12 -0500
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.9ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 1.6ms | Allocations: 4739)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:34:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:34:20 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:34:20 -0500
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.44ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 1.5ms | Allocations: 4738)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:34:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:34:25 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:34:25 -0500
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.8ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 1.4ms | Allocations: 4723)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:34:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:36:02 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:36:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mChat Load (1.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.81ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 1.6ms | Allocations: 4738)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:36:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:43:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:43:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:43:33 -0500
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:43:33 -0500
+Processing by ChatsController#index as */*
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mChat Load (0.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.01ms)
+Completed 200 OK in 59ms (Views: 54.2ms | ActiveRecord: 12.0ms | Allocations: 17314)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:43:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 10:43:40 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 250ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 858)
+
+
+Started POST "/log_in" for ::1 at 2021-07-29 10:43:44 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 201 Created in 250ms (Views: 0.9ms | ActiveRecord: 0.4ms | Allocations: 815)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:43:45 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:43:45 -0500
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.69ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 1.1ms | Allocations: 4693)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:43:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats/1" for ::1 at 2021-07-29 10:45:48 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 32)
+
+
+Started GET "/chats/1" for ::1 at 2021-07-29 10:45:48 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 28)
+
+
+Started GET "/chats/1" for ::1 at 2021-07-29 10:47:01 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 28)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:47:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats/1" for ::1 at 2021-07-29 10:48:37 -0500
+Processing by ChatsController#show as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:48:37 -0500
+  Parameters: {"id"=>"1"}
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:11:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (22.01ms)
+Completed 200 OK in 53ms (Views: 16.2ms | ActiveRecord: 22.0ms | Allocations: 13090)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats/2" for ::1 at 2021-07-29 10:50:02 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"2"}
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:02 -0500
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 404 Not Found in 21ms (Views: 1.0ms | ActiveRecord: 9.8ms | Allocations: 3204)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:50:26 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mChat Load (1.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.9ms)
+Completed 200 OK in 48ms (Views: 31.8ms | ActiveRecord: 11.4ms | Allocations: 16092)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats" for ::1 at 2021-07-29 10:50:28 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:28 -0500
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.81ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 1.2ms | Allocations: 4723)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 10:50:35 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"jj@j.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"jj@j.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jj@j.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 201 Created in 254ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 930)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:50:37 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:37 -0500
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.34ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 1.4ms | Allocations: 4731)
+
+
+Started GET "/chats/1" for ::1 at 2021-07-29 10:50:53 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"1"}
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:53 -0500
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:11:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (4.18ms)
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 2.1ms | Allocations: 2473)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:50:55 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:55 -0500
+  [1m[36mChat Load (1.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.82ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 2.0ms | Allocations: 4740)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:50:57 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (0.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:50:57 -0500
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:11:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (3.97ms)
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 1.4ms | Allocations: 2244)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 10:51:27 -0500
+Processing by ChatsController#index as */*
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:51:27 -0500
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.32ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 2.2ms | Allocations: 4738)
+
+
+Started GET "/chats/1" for ::1 at 2021-07-29 10:51:29 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"1"}
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:51:29 -0500
+  [1m[36mChat Load (1.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:11:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (5.96ms)
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 2.3ms | Allocations: 2376)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:51:33 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (0.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:11:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (3.44ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 1.0ms | Allocations: 1660)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:51:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats/6" for ::1 at 2021-07-29 10:52:21 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:52:21 -0500
+  [1m[36mChat Load (0.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+Completed 500 Internal Server Error in 56578ms (ActiveRecord: 9.9ms | Allocations: 68961)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/chats_controller.rb:12:in `show'
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats/6" for ::1 at 2021-07-29 10:53:43 -0500
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:53:44 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (0.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (205.29ms)
+Completed 200 OK in 383ms (Views: 212.2ms | ActiveRecord: 17.9ms | Allocations: 4621537)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:53:49 -0500
+Started GET "/chats" for ::1 at 2021-07-29 10:53:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (303.19ms)
+Completed 200 OK in 492ms (Views: 433.5ms | ActiveRecord: 14.4ms | Allocations: 5938112)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:53:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:53:51 -0500
+Started GET "/chats" for ::1 at 2021-07-29 10:53:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (189.23ms)
+Completed 200 OK in 248ms (Views: 239.1ms | ActiveRecord: 3.9ms | Allocations: 1840774)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:53:52 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 10:53:56 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.69ms)
+Completed 201 Created in 295ms (Views: 14.9ms | ActiveRecord: 1.0ms | Allocations: 515446)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:53:58 -0500
+Started GET "/chats" for ::1 at 2021-07-29 10:53:58 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (136.7ms)
+Completed 200 OK in 178ms (Views: 171.5ms | ActiveRecord: 2.9ms | Allocations: 1841586)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:54:14 -0500
+Started GET "/chats/6" for ::1 at 2021-07-29 10:54:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (3.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (50.48ms)
+Completed 200 OK in 94ms (Views: 53.5ms | ActiveRecord: 6.6ms | Allocations: 883119)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:55:10 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (47.81ms)
+Completed 200 OK in 86ms (Views: 57.9ms | ActiveRecord: 2.0ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:55:26 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (2.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (57.63ms)
+Completed 200 OK in 104ms (Views: 69.1ms | ActiveRecord: 3.5ms | Allocations: 794280)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:55:51 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (57.5ms)
+Completed 200 OK in 92ms (Views: 65.2ms | ActiveRecord: 2.2ms | Allocations: 794280)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:56:02 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (57.29ms)
+Completed 200 OK in 90ms (Views: 65.2ms | ActiveRecord: 2.9ms | Allocations: 794279)
+
+
+Started GET "/chat/Birds/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-29 10:56:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/chat/Birds/babel/parser/lib/index.js"):
+  
+Started GET "/chats/6" for ::1 at 2021-07-29 10:56:35 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (2.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (93.67ms)
+Completed 200 OK in 153ms (Views: 101.9ms | ActiveRecord: 4.9ms | Allocations: 796760)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:56:36 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.8ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 10:56:36 -0500
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (95.92ms)
+Completed 200 OK in 151ms (Views: 108.9ms | ActiveRecord: 4.3ms | Allocations: 919469)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats/6" for ::1 at 2021-07-29 10:57:03 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (50.62ms)
+Completed 200 OK in 86ms (Views: 60.9ms | ActiveRecord: 2.0ms | Allocations: 794278)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:57:10 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (49.96ms)
+Completed 200 OK in 84ms (Views: 57.5ms | ActiveRecord: 2.1ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:57:29 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (50.65ms)
+Completed 200 OK in 84ms (Views: 60.5ms | ActiveRecord: 2.3ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:58:02 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (53.2ms)
+Completed 200 OK in 89ms (Views: 61.8ms | ActiveRecord: 2.7ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:58:55 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (54.46ms)
+Completed 200 OK in 95ms (Views: 62.1ms | ActiveRecord: 3.2ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:59:03 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (2.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (56.41ms)
+Completed 200 OK in 106ms (Views: 65.4ms | ActiveRecord: 3.2ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 10:59:05 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (71.9ms)
+Completed 200 OK in 119ms (Views: 82.8ms | ActiveRecord: 2.5ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 11:00:13 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (2.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (59.98ms)
+Completed 200 OK in 106ms (Views: 70.1ms | ActiveRecord: 3.3ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 11:00:33 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.0ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (51.42ms)
+Completed 200 OK in 82ms (Views: 58.6ms | ActiveRecord: 2.1ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 11:02:31 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (50.56ms)
+Completed 200 OK in 82ms (Views: 58.4ms | ActiveRecord: 2.2ms | Allocations: 794279)
+
+
+Started GET "/chats/6" for ::1 at 2021-07-29 11:03:14 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (52.98ms)
+Completed 200 OK in 90ms (Views: 60.7ms | ActiveRecord: 2.3ms | Allocations: 794279)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 11:03:39 -0500
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:03:39 -0500
+Processing by ChatsController#index as */*
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mChat Load (18.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (148.63ms)
+Completed 200 OK in 210ms (Views: 186.5ms | ActiveRecord: 20.5ms | Allocations: 2043822)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:03:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 11:03:48 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.01ms)
+Completed 201 Created in 286ms (Views: 16.0ms | ActiveRecord: 1.1ms | Allocations: 407993)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:03:50 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:03:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (141.91ms)
+Completed 200 OK in 183ms (Views: 172.9ms | ActiveRecord: 3.1ms | Allocations: 1840774)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:03:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/chats/5" for ::1 at 2021-07-29 11:05:44 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mChat Load (2.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (84.56ms)
+Completed 200 OK in 148ms (Views: 94.8ms | ActiveRecord: 4.3ms | Allocations: 794277)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:05:47 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:05:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.9ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (147.56ms)
+Completed 200 OK in 193ms (Views: 185.9ms | ActiveRecord: 3.6ms | Allocations: 1840774)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:05:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 11:05:52 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.13ms)
+Completed 201 Created in 286ms (Views: 13.4ms | ActiveRecord: 1.0ms | Allocations: 407993)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:05:54 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:05:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (166.05ms)
+Completed 200 OK in 230ms (Views: 219.4ms | ActiveRecord: 4.1ms | Allocations: 1862799)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:05:56 -0500
+Started GET "/chats/5" for ::1 at 2021-07-29 11:05:56 -0500
+Processing by ChatsController#show as */*
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  Parameters: {"id"=>"5"}
+  [1m[36mChat Load (1.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (49.89ms)
+Completed 200 OK in 90ms (Views: 57.8ms | ActiveRecord: 2.5ms | Allocations: 820191)
+
+
+Started GET "/chats/5" for ::1 at 2021-07-29 11:06:04 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mChat Load (2.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (92.57ms)
+Completed 200 OK in 140ms (Views: 104.5ms | ActiveRecord: 3.8ms | Allocations: 794278)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:08 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:06:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (150.62ms)
+Completed 200 OK in 201ms (Views: 192.2ms | ActiveRecord: 2.9ms | Allocations: 1864828)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:10 -0500
+Started GET "/chats/6" for ::1 at 2021-07-29 11:06:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mChat Load (1.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (51.57ms)
+Completed 200 OK in 89ms (Views: 61.2ms | ActiveRecord: 2.7ms | Allocations: 794278)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:22 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:06:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.3ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (150.12ms)
+Completed 200 OK in 194ms (Views: 187.2ms | ActiveRecord: 3.0ms | Allocations: 1841528)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:40 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:06:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.6ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (150.5ms)
+Completed 200 OK in 193ms (Views: 186.5ms | ActiveRecord: 3.3ms | Allocations: 1842268)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:06:45 -0500
+Started GET "/chats/5" for ::1 at 2021-07-29 11:06:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (54.9ms)
+Completed 200 OK in 93ms (Views: 63.3ms | ActiveRecord: 2.3ms | Allocations: 794277)
+
+
+Started GET "/chat/Magic%20The%20Gathering/babel/parser/lib/index.js" for 127.0.0.1 at 2021-07-29 11:10:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/chat/Magic%20The%20Gathering/babel/parser/lib/index.js"):
+  
+Started GET "/chats/5" for ::1 at 2021-07-29 11:10:31 -0500
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"5"}
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:31 -0500
+  [1m[36mChat Load (3.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (86.76ms)
+Completed 200 OK in 192ms (Views: 103.4ms | ActiveRecord: 6.8ms | Allocations: 1082370)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/log_in" for ::1 at 2021-07-29 11:10:37 -0500
+Processing by LogInController#create as JSON
+  Parameters: {"email"=>"g@g.com", "password"=>"[FILTERED]", "log_in"=>{"email"=>"g@g.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "g@g.com"], ["LIMIT", 1]]
+  ↳ app/controllers/log_in_controller.rb:4:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.94ms)
+Completed 201 Created in 291ms (Views: 15.0ms | ActiveRecord: 1.0ms | Allocations: 407993)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:39 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:10:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.1ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (154.91ms)
+Completed 200 OK in 201ms (Views: 192.0ms | ActiveRecord: 5.1ms | Allocations: 1864756)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:44 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:10:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (155.64ms)
+Completed 200 OK in 210ms (Views: 203.3ms | ActiveRecord: 3.1ms | Allocations: 1840774)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:47 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:10:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.7ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (157.15ms)
+Completed 200 OK in 200ms (Views: 191.3ms | ActiveRecord: 3.7ms | Allocations: 1840774)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:10:50 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:10:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (158.31ms)
+Completed 200 OK in 205ms (Views: 193.4ms | ActiveRecord: 3.6ms | Allocations: 1840774)
+
+
+Started GET "/chats" for ::1 at 2021-07-29 11:11:08 -0500
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.2ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (188.77ms)
+Completed 200 OK in 242ms (Views: 231.7ms | ActiveRecord: 3.1ms | Allocations: 1843320)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:11:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:11:13 -0500
+Started GET "/chats" for ::1 at 2021-07-29 11:11:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#index as */*
+  [1m[36mChat Load (1.5ms)[0m  [1m[34mSELECT "chats".* FROM "chats"[0m
+  ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (172.55ms)
+Completed 200 OK in 220ms (Views: 210.2ms | ActiveRecord: 3.4ms | Allocations: 1843259)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-07-29 11:12:01 -0500
+Started GET "/chats/1" for ::1 at 2021-07-29 11:12:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Processing by ChatsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mChat Load (1.4ms)[0m  [1m[34mSELECT "chats".* FROM "chats" WHERE "chats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/chats_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/chats_controller.rb:12:in `show'
+[active_model_serializers] Rendered ChatSerializer with ActiveModelSerializers::Adapter::Attributes (51.57ms)
+Completed 200 OK in 82ms (Views: 56.4ms | ActiveRecord: 3.5ms | Allocations: 796759)
+
+

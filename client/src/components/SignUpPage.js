@@ -18,16 +18,17 @@ export default function SignUpPage() {
    const [newSignUp, setNewSignUp] = useState(initialState)
    const [errors, setErorrs] = useState(null)
 
-   console.log(newSignUp.age_group)
    const handleUpdate = e => setNewSignUp({ ...newSignUp, [e.target.name]: e.target.value })
 
    const handleSubmit = e => {
       e.preventDefault()
-      console.log(newSignUp)
       setErorrs(null)
       if (newSignUp.password === newSignUp.confirmPassword) {
-         handleCreate(newSignUp, "users", setErorrs, successHandle)
-         setNewSignUp(initialState)
+         handleCreate(newSignUp, "users", setErorrs, successHandle).then(() => {
+            if (errors === null) {
+               setNewSignUp(initialState)
+            }
+         })
       } else {
          setErorrs("These passwords do not match")
       }

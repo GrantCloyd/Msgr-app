@@ -1,22 +1,63 @@
-import React from "react"
+import React, { useState } from "react"
+import { handleCreate } from "../constants"
+import { useHistory } from "react-router-dom"
 
-export default function CreateChat() {
+export default function CreateChat({ userId }) {
+   const initialFormState = {
+      title: "",
+      description: "",
+      location: "",
+      age_group: "--select one--",
+      admin_id: userId,
+   }
+
+   const history = useHistory()
+   const [newChat, setNewChat] = useState(initialFormState)
+   const [errors, setErrors] = useState(null)
+   const handleUpdate = e => setNewChat({ ...newChat, [e.target.name]: e.target.value })
+
+   const successHandle = e => history.push("/find")
+
+   const handleSubmit = e => {
+      e.preventDefault()
+      handleCreate(newChat, "chats", setErrors, successHandle)
+   }
+
    return (
       <div>
          <div>
             <h2>Create Chat Room!</h2>
-            <form>
+            {errors ? <p>{errors}</p> : null}
+            <form onSubmit={handleSubmit}>
                <label htmlFor="title">Title: </label>
-               <input type="text" name="title" placeholder="Enter Title" />
+               <input
+                  value={newChat.title}
+                  onChange={handleUpdate}
+                  type="text"
+                  name="title"
+                  placeholder="Enter Title"
+               />
                <label htmlFor="description">Description: </label>
-               <input type="textarea" name="description" placeholder="Enter Description" />
+               <input
+                  value={newChat.description}
+                  onChange={handleUpdate}
+                  type="textarea"
+                  name="description"
+                  placeholder="Enter Description"
+               />
                <label htmlFor="location">Location: </label>
-               <input type="text" name="location" placeholder="Enter Location" />
-               <label htmlFor="ageGroup">Select Age Group: </label>
-               <select name="ageGroup">
+               <input
+                  value={newChat.location}
+                  onChange={handleUpdate}
+                  type="text"
+                  name="location"
+                  placeholder="Enter Location"
+               />
+               <label htmlFor="age_group">Select Age Group: </label>
+               <select value={newChat.age_group} onChange={handleUpdate} name="age_group">
                   <option>--select one--</option>
-                  <option value="family">Family</option>
-                  <option value="adult">Adult</option>
+                  <option value="Family">Family</option>
+                  <option value="Adult">Adult</option>
                </select>
                <button>Create</button>
             </form>

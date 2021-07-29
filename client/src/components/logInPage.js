@@ -2,18 +2,13 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { handleCreate } from "../constants"
 
-export default function LogInPage() {
-   const initialUserState = {
-      name: "Guest",
-      id: "",
-      image_url: "",
-   }
+export default function LogInPage({ user, setUser }) {
+   //move user and userState into App to set state of user throughout app and not just at this level
+   const { name, image_url, id } = user
    const initialLogInState = {
       email: "",
       password: "",
    }
-
-   const [user, setUser] = useState(initialUserState)
    const [errors, setErrors] = useState(null)
    const [newLogin, setNewLogin] = useState(initialLogInState)
 
@@ -26,17 +21,16 @@ export default function LogInPage() {
 
    return (
       <div>
-         <h2>Welcome to localHost - please sign-in!</h2>
-         <h2>Log In!</h2>
          {errors ? <p>{errors}</p> : null}
-         {user.name !== "Guest" ? (
+         {name !== "Guest" ? (
             <div>
-               <img src={user.image_url} />
-               <p>Welcome {user.name}</p>
+               <h2>Welcome to localHost {name}!</h2>
+               <img alt="Avatar" src={image_url} />
                <p>You're free to start chatting!</p>
             </div>
          ) : (
             <>
+               <h2>Log In to start chatting</h2>
                <form onSubmit={handleSubmit}>
                   <label htmlFor="email">Email</label>
                   <input
