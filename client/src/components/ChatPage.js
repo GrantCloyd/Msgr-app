@@ -62,6 +62,7 @@ export default function ChatPage({ userId, userName }) {
       if (message.delete) {
          let update = cables.filter(cable => cable.id !== message.id)
          setCables(update)
+         return
       }
 
       if (!cables.map(cable => cable.id).includes(message.id)) {
