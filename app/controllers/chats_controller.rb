@@ -25,6 +25,7 @@ class ChatsController < ApplicationController
       def destroy 
         chat = Chat.find(params[:id])
         chat.destroy
+        ActionCable.server.broadcast "#{chat.title}_channel", {message: {delete_channel: true}}
         head :no_content, status: 204
       end
    

@@ -19,13 +19,15 @@ export default function Message({ cable, userId }) {
                <img className="msgImg" alt={`${cable.user.name}`} src={cable.user.image_url} />{" "}
                {cable.user.name} : {cable.content}{" "}
             </p>{" "}
-            <p>@ {new Date(cable.created_at).toLocaleString()}</p>
-            {userId === cable.user.id ? (
-               <button onClick={handleDelete}>❌ Delete</button>
-            ) : (
-               <button>❗️React</button>
-            )}
-            <hr />
+            <p>
+               @ {new Date(cable.created_at).toLocaleString()}{" "}
+               {userId === cable.user.id ? (
+                  <button onClick={handleDelete}>❌ Delete</button>
+               ) : (
+                  <button>❗️React</button>
+               )}
+               <hr />
+            </p>
          </div>
       </>
    )

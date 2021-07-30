@@ -21,3 +21,9 @@ img {
    height: 22px;
    width: 22px;
 }
+
+.messageText {
+   float: left;
+   position: sticky;
+   top: 50%;
+}

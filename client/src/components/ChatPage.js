@@ -6,12 +6,12 @@ import Message from "./Message"
 
 export default function ChatPage({ userId, userName }) {
    const messageContainer = useRef()
-   console.log(messageContainer)
 
    const scrollToBottom = () => {
       messageContainer.current.scrollIntoView({
          behavior: "smooth",
-         block: "start",
+         block: "end",
+         inline: "nearest",
       })
    }
 
@@ -30,6 +30,7 @@ export default function ChatPage({ userId, userName }) {
    const [messages, setMessages] = useState([])
    const [newMessage, setNewMessage] = useState(initialMessage)
    const [cables, setCables] = useState([])
+   const [deleted, setDeleted] = useState(false)
 
    useEffect(() => {
       scrollToBottom()
@@ -63,6 +64,10 @@ export default function ChatPage({ userId, userName }) {
          let update = cables.filter(cable => cable.id !== message.id)
          setCables(update)
          return
+      }
+      if (message.delete_channel) {
+         setDeleted(!deleted)
+         return history.push("/find")
       }
 
       if (!cables.map(cable => cable.id).includes(message.id)) {
@@ -113,28 +118,29 @@ export default function ChatPage({ userId, userName }) {
             <h3>Main text box</h3>
             <p>Standard messages</p>
             {/* {messageMap} */}
+            <>
+               <form className="messageText" onSubmit={handleSubmit}>
+                  <label htmlFor="messageText">Message: </label>
+                  <input
+                     value={newMessage.content}
+                     onChange={handleChange}
+                     name="messageText"
+                     type="textarea"
+                     placeholder="Send .."
+                  />
+                  <button>Send</button>
+                  {errors ? <p>{errors}</p> : null}
+               </form>
+            </>
             <ActionCable
                channel={{ channel: `ChatsChannel`, params: roomInfo.title }}
                onReceived={handleReceivedChat}>
-               <p>Live time messages</p>
+               <br />
                <div ref={messageContainer} className="messageContainer">
                   {cablesMap}
                </div>
             </ActionCable>
          </div>
-         <hr />
-         <form onSubmit={handleSubmit}>
-            <label htmlFor="messageText">Message: </label>
-            <input
-               value={newMessage.content}
-               onChange={handleChange}
-               name="messageText"
-               type="textarea"
-               placeholder="Send .."
-            />
-            <button>Send</button>
-         </form>
-         {errors ? <p>{errors}</p> : null}
       </div>
    )
 }
