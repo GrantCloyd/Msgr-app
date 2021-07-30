@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { API_ROOT, HEADERS } from "../constants"
 import { useHistory } from "react-router-dom"
 
@@ -20,6 +20,10 @@ export default function ProfilePage({ user, setUser, guestState }) {
          history.push("/")
       }, 1000)
    }
+
+   useEffect(() => {
+      if (name === "Guest") return history.push("/")
+   }, [])
 
    return (
       <div>

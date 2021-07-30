@@ -20,18 +20,23 @@ function App() {
       age_group: "",
    }
    const [user, setUser] = useState(initialUserState)
+   if (user.name === "Guest")
+      return <Route exact path="/" component={() => <LogInPage user={user} setUser={setUser} />} />
 
    return (
       <Switch>
          <div className="App">
             <h1>MSGR APP</h1>
-            <NavBar userId={user.id} />
+            <NavBar userId={user.id} setUser={setUser} guestState={initialUserState} />
             <hr />
             <Route exact path="/" component={() => <LogInPage user={user} setUser={setUser} />} />
             <hr />
             <Route path="/signup" component={SignUpPage} />
             <hr />
-            <Route path="/createchat" component={() => <CreateChat userId={user.id} />} />
+            <Route
+               path="/createchat"
+               component={() => <CreateChat userName={user.name} userId={user.id} />}
+            />
             <hr />
             <Route
                path="/find"

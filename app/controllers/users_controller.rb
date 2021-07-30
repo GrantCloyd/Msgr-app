@@ -18,6 +18,12 @@ class UsersController < ApplicationController
      head :no_content, status: 204
    end
 
+  def show 
+   user = User.find(session[:user_id])
+   render json: user
+   byebug
+  end
+
    private 
 
    def user_params

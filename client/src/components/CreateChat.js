@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { handleCreate } from "../constants"
 import { useHistory } from "react-router-dom"
 
-export default function CreateChat({ userId }) {
+export default function CreateChat({ userId, userName }) {
    const initialFormState = {
       title: "",
       description: "",
@@ -22,6 +22,10 @@ export default function CreateChat({ userId }) {
       e.preventDefault()
       handleCreate(newChat, "chats", setErrors, successHandle)
    }
+
+   useEffect(() => {
+      if (userName === "Guest") return history.push("/")
+   }, [])
 
    return (
       <div>

@@ -32,7 +32,7 @@ export default function LogInPage({ user, setUser }) {
             <>
                <h2>Log In to start chatting</h2>
                <form onSubmit={handleSubmit}>
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email">Email: </label>
                   <input
                      value={newLogin.email}
                      onChange={handleUpdate}
@@ -40,7 +40,8 @@ export default function LogInPage({ user, setUser }) {
                      name="email"
                      placeholder="Email Address"
                   />
-                  <label htmlFor="password">Password</label>
+                  <br />
+                  <label htmlFor="password">Password: </label>
                   <input
                      value={newLogin.password}
                      onChange={handleUpdate}
@@ -48,6 +49,7 @@ export default function LogInPage({ user, setUser }) {
                      name="password"
                      placeholder="Password"
                   />
+                  <br />
                   <button>Submit</button>
                </form>
                <p>

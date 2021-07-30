@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react"
 import { API_ROOT } from "../constants"
 import ChatLi from "./ChatLi"
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 
 export default function ChatList({ userAgeGroup, userName }) {
    const [loading, setLoading] = useState(null)
+   const history = useHistory()
 
    useEffect(() => {
+      if (userName === "Guest") return history.push("/")
       async function getData() {
          setLoading("loading")
          const res = await fetch(`${API_ROOT}/chats`)
@@ -27,19 +29,10 @@ export default function ChatList({ userAgeGroup, userName }) {
 
    return (
       <div>
-         {" "}
-         {userName === "Guest" ? (
-            <h3>
-               Please <Link to="/">Log In</Link> First
-            </h3>
-         ) : (
-            <>
-               <h2>Available Chat Rooms : </h2>
-               {loading ? <p>Loading ...</p> : null}
-               {userAgeGroup === "Family" ? <h4>Only Showing Family friendly chat-rooms</h4> : null}
-               <ul>{userAgeGroup === "Family" ? noAdultRoomList : allRoomList}</ul>
-            </>
-         )}
+         <h2>Available Chat Rooms : </h2>
+         {loading ? <p>Loading ...</p> : null}
+         {userAgeGroup === "Family" ? <h4>Only Showing Family friendly chat-rooms</h4> : null}
+         <ul>{userAgeGroup === "Family" ? noAdultRoomList : allRoomList}</ul>
       </div>
    )
 }

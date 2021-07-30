@@ -35,6 +35,7 @@ export default function ChatPage({ userId, userName }) {
    }, [cables])
 
    useEffect(() => {
+      if (userName === "Guest") return history.push("/")
       async function getData() {
          const res = await fetch(`${API_ROOT}/chats/${id}`)
          const data = await res.json()

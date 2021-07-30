@@ -1,21 +1,23 @@
 import React from "react"
-import { NavLink, Link } from "react-router-dom"
+import { NavLink, Link, useHistory } from "react-router-dom"
 
-export default function NavBar({ userId }) {
+export default function NavBar({ userId, setUser, guestState }) {
+   const history = useHistory()
+
+   const handleLogOut = () => {
+      setUser(guestState)
+      history.push("/")
+   }
    return (
       <nav>
          {" "}
          Links
          <ul>
             <NavLink to="/">Home</NavLink>
-            {userId === "" ? null : (
-               <>
-                  || <NavLink to={`/profile/${userId}`}>Profile</NavLink> ||
-                  <NavLink to="/find">Find Chat Room</NavLink> ||
-                  <NavLink to="/createchat">Create Chat Room</NavLink> ||
-                  <Link>Log-Out</Link>||
-               </>
-            )}
+            || <NavLink to={`/profile/${userId}`}>Profile</NavLink> ||
+            <NavLink to="/find">Find Chat Room</NavLink> ||
+            <NavLink to="/createchat">Create Chat Room</NavLink> ||
+            <Link onClick={handleLogOut}>Log-Out</Link>
          </ul>
       </nav>
    )
