@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { API_ROOT, handleCreate, HEADERS } from "../constants"
 import { ActionCable, ActionCableProvider } from "react-actioncable-provider"
+import Message from "./Message"
 
 export default function ChatPage({ userId, userName }) {
    const messageContainer = useRef()
@@ -53,12 +54,16 @@ export default function ChatPage({ userId, userName }) {
       e.preventDefault()
       setErrors(null)
       handleCreate(newMessage, "messages", setErrors, handleSuccess)
+      setNewMessage(initialMessage)
    }
 
    const handleReceivedChat = response => {
       const { message } = response
-      console.log(message)
-      console.log(response.message)
+      if (message.delete) {
+         let update = cables.filter(cable => cable.id !== message.id)
+         setCables(update)
+      }
+
       if (!cables.map(cable => cable.id).includes(message.id)) {
          setCables([...cables, message])
       }
@@ -73,17 +78,7 @@ export default function ChatPage({ userId, userName }) {
       // const data = await res.json()
    }
 
-   const cablesMap = cables.map(cable => (
-      <div key={cable.id}>
-         <hr />
-         <p>
-            <img className="msgImg" alt={`${cable.user.name}`} src={cable.user.image_url} />{" "}
-            {cable.user.name} : {cable.content}{" "}
-         </p>{" "}
-         <p>@: {new Date(cable.created_at).toLocaleString()}</p>
-         <hr />
-      </div>
-   ))
+   const cablesMap = cables.map(cable => <Message cable={cable} key={cable.id} userId={userId} />)
 
    // const messageMap = messages.map(message => <p key={message.id}>{message.content}</p>)
 
@@ -125,20 +120,16 @@ export default function ChatPage({ userId, userName }) {
                   {cablesMap}
                </div>
             </ActionCable>
-
-            <p>
-               <span>👨🏽‍🎤 user_1: </span> Hi, user 2, this is a message from user 1 yet again!{" "}
-               <span>
-                  <button>React</button>
-               </span>
-            </p>
          </div>
+         <hr />
          <form onSubmit={handleSubmit}>
+            <label htmlFor="messageText">Message: </label>
             <input
                value={newMessage.content}
                onChange={handleChange}
+               name="messageText"
                type="textarea"
-               placeholder="Type something"
+               placeholder="Send .."
             />
             <button>Send</button>
          </form>

@@ -1,20 +1,32 @@
 import React from "react"
-import { ActionCable } from "react-actioncable-provider"
+import { API_ROOT, HEADERS } from "../constants"
 
-export default function Message() {
+export default function Message({ cable, userId }) {
+   console.log(cable)
+
+   async function handleDelete() {
+      const res = await fetch(`${API_ROOT}/messages/${cable.id}`, {
+         method: "DELETE",
+         headers: HEADERS,
+      })
+   }
+
    return (
       <>
-         <p>
-            <span>👨🏽‍🎤 user_1: </span> Hi, this is a message from user 1{" "}
-            <span>
-               <button>React</button>
-            </span>
-         </p>
-         <ActionCable
-            key={message.id}
-            channel={{ channel: "chat_channel", chat: chat.id }}
-            onReceived={handleReceivedMessage}
-         />
+         <div key={cable.id}>
+            <hr />
+            <p>
+               <img className="msgImg" alt={`${cable.user.name}`} src={cable.user.image_url} />{" "}
+               {cable.user.name} : {cable.content}{" "}
+            </p>{" "}
+            <p>@ {new Date(cable.created_at).toLocaleString()}</p>
+            {userId === cable.user.id ? (
+               <button onClick={handleDelete}>❌ Delete</button>
+            ) : (
+               <button>❗️React</button>
+            )}
+            <hr />
+         </div>
       </>
    )
 }
