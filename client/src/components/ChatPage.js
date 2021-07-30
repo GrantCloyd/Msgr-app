@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
-import { API_ROOT, handleCreate } from "../constants"
+import { useParams, useHistory } from "react-router-dom"
+import { API_ROOT, handleCreate, HEADERS } from "../constants"
 import { ActionCable, ActionCableProvider } from "react-actioncable-provider"
 
-export default function ChatPage({ userId }) {
+export default function ChatPage({ userId, userName }) {
    const { title, id } = useParams()
+   const history = useHistory()
    const initialState = {
       admin: { name: "", email: "" },
    }
@@ -29,25 +30,47 @@ export default function ChatPage({ userId }) {
       getData()
    }, [])
 
-   const handleSuccess = e => setMessages([...messages, e])
+   const handleSuccess = e => {
+      setMessages([...messages, e])
+      setNewMessage(initialMessage)
+   }
 
    const handleChange = e => setNewMessage({ ...newMessage, content: e.target.value })
 
    const handleSubmit = e => {
       e.preventDefault()
-
+      setErrors(null)
       handleCreate(newMessage, "messages", setErrors, handleSuccess)
    }
 
    const handleReceivedChat = response => {
-      console.log(response)
-      if (!cables.map(cable => cable.id).includes(response.id)) {
-         setCables([...cables, response])
-         console.log(cables)
+      const { message } = response
+      console.log(response.message)
+      if (!cables.map(cable => cable.id).includes(message.id)) {
+         setCables([...cables, message])
       }
    }
 
-   const cablesMap = cables.map(cable => <p key={cable.id}>{cable.content}</p>)
+   async function handleDeleteChat() {
+      const res = await fetch(`${API_ROOT}/chats/${id}`, {
+         method: "DELETE",
+         headers: HEADERS,
+      })
+      setTimeout(() => history.push("/find"), 1000)
+      // const data = await res.json()
+   }
+
+   const cablesMap = cables.map(cable => (
+      <div key={cable.id}>
+         <hr />
+         <p>
+            <img className="msgImg" alt={`${cable.user.name}`} src={cable.user.image_url} />{" "}
+            {cable.user.name} : {cable.content}{" "}
+         </p>{" "}
+         <p>@: {new Date(cable.created_at).toLocaleString()}</p>
+         <hr />
+      </div>
+   ))
 
    //const messageMap = messages.map(message => <p key={message.id}>{message.content}</p>)
 
@@ -60,6 +83,12 @@ export default function ChatPage({ userId }) {
             For further questions please reach out to channel admin: {roomInfo.admin.name} at{" "}
             <a href={`mailto:${roomInfo.admin.email}`}>{roomInfo.admin.email}</a>
          </h3>
+         {userName === roomInfo.admin.name ? (
+            <>
+               <button>Edit Room Settings</button>{" "}
+               <button onClick={handleDeleteChat}>Delete Room</button>{" "}
+            </>
+         ) : null}
          <h3>
             {roomInfo.age_group === "Family"
                ? "This room is intended for all ages"

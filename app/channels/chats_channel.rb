@@ -5,6 +5,6 @@ class ChatsChannel < ApplicationCable::Channel
   end
 
   def unsubscribed
-
+   
   end
 end

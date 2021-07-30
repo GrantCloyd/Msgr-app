@@ -3,8 +3,11 @@ class MessagesController < ApplicationController
 
     def create 
         message = Message.create!(message_params)
-        chat = Chat.find(message_params[:chat_id])
-        ActionCable.server.broadcast "chats_channel", message
+        serialized_data = ActiveModelSerializers::Adapter::Json.new(
+         MessageSerializer.new(message)
+       ).serializable_hash
+        #chat = Chat.find(message_params[:chat_id])
+        ActionCable.server.broadcast "chats_channel", serialized_data
         #ChatsChannel.broadcast_to "chats_channel",  message
         render json: message
       rescue ActiveRecord::RecordInvalid => e

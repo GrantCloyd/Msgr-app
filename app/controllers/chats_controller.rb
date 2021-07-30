@@ -21,6 +21,12 @@ class ChatsController < ApplicationController
       rescue ActiveRecord::RecordInvalid => e
          render json: {error: e.message}, status: 422
       end
+
+      def destroy 
+        chat = Chat.find(params[:id])
+        chat.destroy
+        head :no_content, status: 204
+      end
    
       private 
    
