@@ -2,7 +2,7 @@ class MessagesChannel < ApplicationCable::Channel
   def subscribed
     byebug
     chat = Chat.find(params[:id])
-    stream_from 'messages_channel'
+    stream_for chat
   end
 
   def unsubscribed

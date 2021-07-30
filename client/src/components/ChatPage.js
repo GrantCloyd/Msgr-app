@@ -1,9 +1,19 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { API_ROOT, handleCreate, HEADERS } from "../constants"
 import { ActionCable, ActionCableProvider } from "react-actioncable-provider"
 
 export default function ChatPage({ userId, userName }) {
+   const messageContainer = useRef()
+   console.log(messageContainer)
+
+   const scrollToBottom = () => {
+      messageContainer.current.scrollIntoView({
+         behavior: "smooth",
+         block: "start",
+      })
+   }
+
    const { title, id } = useParams()
    const history = useHistory()
    const initialState = {
@@ -21,6 +31,10 @@ export default function ChatPage({ userId, userName }) {
    const [cables, setCables] = useState([])
 
    useEffect(() => {
+      scrollToBottom()
+   }, [cables])
+
+   useEffect(() => {
       async function getData() {
          const res = await fetch(`${API_ROOT}/chats/${id}`)
          const data = await res.json()
@@ -30,10 +44,7 @@ export default function ChatPage({ userId, userName }) {
       getData()
    }, [])
 
-   const handleSuccess = e => {
-      setMessages([...messages, e])
-      setNewMessage(initialMessage)
-   }
+   const handleSuccess = e => e
 
    const handleChange = e => setNewMessage({ ...newMessage, content: e.target.value })
 
@@ -45,6 +56,7 @@ export default function ChatPage({ userId, userName }) {
 
    const handleReceivedChat = response => {
       const { message } = response
+      console.log(message)
       console.log(response.message)
       if (!cables.map(cable => cable.id).includes(message.id)) {
          setCables([...cables, message])
@@ -72,7 +84,7 @@ export default function ChatPage({ userId, userName }) {
       </div>
    ))
 
-   //const messageMap = messages.map(message => <p key={message.id}>{message.content}</p>)
+   // const messageMap = messages.map(message => <p key={message.id}>{message.content}</p>)
 
    return (
       <div>
@@ -105,10 +117,13 @@ export default function ChatPage({ userId, userName }) {
             <p>Standard messages</p>
             {/* {messageMap} */}
             <ActionCable
-               channel={{ channel: `ChatsChannel` }}
-               onReceived={handleReceivedChat}></ActionCable>
-            <p>Live time messages</p>
-            {cablesMap}
+               channel={{ channel: `ChatsChannel`, params: roomInfo.title }}
+               onReceived={handleReceivedChat}>
+               <p>Live time messages</p>
+               <div ref={messageContainer} className="messageContainer">
+                  {cablesMap}
+               </div>
+            </ActionCable>
 
             <p>
                <span>👨🏽‍🎤 user_1: </span> Hi, user 2, this is a message from user 1 yet again!{" "}

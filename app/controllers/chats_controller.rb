@@ -16,7 +16,7 @@ class ChatsController < ApplicationController
 
     def create 
         chat = Chat.create!(chat_params)
-        ActionCable.server.broadcast 'chats_channel', chat
+       # ActionCable.server.broadcast 'chats_channel', chat
         render json: chat, status: 201
       rescue ActiveRecord::RecordInvalid => e
          render json: {error: e.message}, status: 422
