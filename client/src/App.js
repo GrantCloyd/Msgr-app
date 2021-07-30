@@ -42,7 +42,12 @@ function App() {
                component={() => <ChatPage userName={user.name} userId={user.id} />}
             />
             <hr />
-            <Route path="/profile/:id" component={() => <ProfilePage {...user} />} />
+            <Route
+               path="/profile/:id"
+               component={() => (
+                  <ProfilePage user={user} setUser={setUser} guestState={initialUserState} />
+               )}
+            />
          </div>
       </Switch>
    )

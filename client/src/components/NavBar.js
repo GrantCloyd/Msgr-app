@@ -7,11 +7,15 @@ export default function NavBar({ userId }) {
          {" "}
          Links
          <ul>
-            <NavLink to="/">Home</NavLink> ||
-            <NavLink to={`/profile/${userId}`}>Profile</NavLink> ||
-            <NavLink to="/find">Find Chat Room</NavLink> ||
-            <NavLink to="/createchat">Create Chat Room</NavLink> ||
-            <Link>Log-Out</Link>
+            <NavLink to="/">Home</NavLink>
+            {userId === "" ? null : (
+               <>
+                  || <NavLink to={`/profile/${userId}`}>Profile</NavLink> ||
+                  <NavLink to="/find">Find Chat Room</NavLink> ||
+                  <NavLink to="/createchat">Create Chat Room</NavLink> ||
+                  <Link>Log-Out</Link>||
+               </>
+            )}
          </ul>
       </nav>
    )

@@ -6,7 +6,7 @@ class User < ApplicationRecord
     
     has_secure_password
     
-    has_many :messages
+    has_many :messages, dependent: :destroy
     has_many :chats, through: :messages
     has_many :chat_admins, class_name: "Chat", foreign_key: "admin_id"
 end
