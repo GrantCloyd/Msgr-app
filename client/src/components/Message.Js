@@ -25,13 +25,28 @@ export default function Message({ cable, userId }) {
       handleCreate(newReact, "reactions", handleErrors, handleSucess)
    }
 
+   const reactMap = cable.reactions.map(r => (
+      <p>
+         {r.reaction === "Sad"
+            ? "😢"
+            : r.reaction === "Happy"
+            ? "😀"
+            : r.reaction === "Love"
+            ? "🥰"
+            : r.reaction === "Angry"
+            ? "😡"
+            : null}{" "}
+         from {r.user}
+      </p>
+   ))
+
    return (
       <>
          <div key={cable.id}>
             <hr />
             <p>
                <img className="msgImg" alt={`${cable.user.name}`} src={cable.user.image_url} />{" "}
-               {cable.user.name} : {cable.content}{" "}
+               {cable.user.name} : {cable.content} {cable.reactions.length > 0 ? reactMap : null}
             </p>{" "}
             <p>
                @ {new Date(cable.created_at).toLocaleString()}{" "}
@@ -66,8 +81,8 @@ export default function Message({ cable, userId }) {
                      </Popper>
                   </>
                )}
-               <hr />
             </p>
+            <hr />
          </div>
       </>
    )

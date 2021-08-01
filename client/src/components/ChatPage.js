@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { API_ROOT, handleCreate, HEADERS } from "../constants"
 import { ActionCable, ActionCableProvider } from "react-actioncable-provider"
+
 import Message from "./Message"
 
 export default function ChatPage({ userId, userName }) {
@@ -71,9 +72,21 @@ export default function ChatPage({ userId, userName }) {
       }
 
       if (message.reaction) {
-         console.log(message)
-      }
+         let update = cables.map(cable => {
+            if (
+               cable.id === message.id &&
+               !cable.reactions.map(r => r.user).includes(message.user)
+            ) {
+               return { ...cable, reactions: [...cable.reactions, message] }
+            } else {
+               return cable
+            }
+         })
+         console.log(update)
 
+         setCables([...update])
+         return
+      }
       if (!cables.map(cable => cable.id).includes(message.id)) {
          setCables([...cables, message])
       }
@@ -88,7 +101,7 @@ export default function ChatPage({ userId, userName }) {
       // const data = await res.json()
    }
 
-   const cablesMap = cables.map(cable => <Message cable={cable} key={cable.id} userId={userId} />)
+   let cablesMap = cables.map(cable => <Message cable={cable} key={cable.id} userId={userId} />)
 
    // const messageMap = messages.map(message => <p key={message.id}>{message.content}</p>)
 
