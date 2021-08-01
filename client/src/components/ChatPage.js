@@ -70,6 +70,10 @@ export default function ChatPage({ userId, userName }) {
          return history.push("/find")
       }
 
+      if (message.reaction) {
+         console.log(message)
+      }
+
       if (!cables.map(cable => cable.id).includes(message.id)) {
          setCables([...cables, message])
       }

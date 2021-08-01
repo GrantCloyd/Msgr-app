@@ -7,16 +7,17 @@ export default function ChatList({ userAgeGroup, userName }) {
    const [loading, setLoading] = useState(null)
    const history = useHistory()
 
+   async function getData() {
+      setLoading("loading")
+      const res = await fetch(`${API_ROOT}/chats`)
+      const data = await res.json()
+      setChatRooms(data)
+
+      setLoading(null)
+   }
+
    useEffect(() => {
       if (userName === "Guest") return history.push("/")
-      async function getData() {
-         setLoading("loading")
-         const res = await fetch(`${API_ROOT}/chats`)
-         const data = await res.json()
-         setChatRooms(data)
-         console.log(data)
-         setLoading(null)
-      }
       getData()
    }, [])
 
@@ -30,6 +31,7 @@ export default function ChatList({ userAgeGroup, userName }) {
    return (
       <div>
          <h2>Available Chat Rooms : </h2>
+         <button onClick={getData}>Refresh Chat List</button>
          {loading ? <p>Loading ...</p> : null}
          {userAgeGroup === "Family" ? <h4>Only Showing Family friendly chat-rooms</h4> : null}
          <ul>{userAgeGroup === "Family" ? noAdultRoomList : allRoomList}</ul>

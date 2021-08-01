@@ -35,7 +35,9 @@ function App() {
             <hr />
             <Route
                path="/createchat"
-               component={() => <CreateChat userName={user.name} userId={user.id} />}
+               component={() => (
+                  <CreateChat userAgeGroup={user.age_group} userName={user.name} userId={user.id} />
+               )}
             />
             <hr />
             <Route

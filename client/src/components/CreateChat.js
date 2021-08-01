@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { handleCreate } from "../constants"
 import { useHistory } from "react-router-dom"
 
-export default function CreateChat({ userId, userName }) {
+export default function CreateChat({ userAgeGroup, userId, userName }) {
    const initialFormState = {
       title: "",
       description: "",
@@ -60,8 +60,8 @@ export default function CreateChat({ userId, userName }) {
                <label htmlFor="age_group">Select Age Group: </label>
                <select value={newChat.age_group} onChange={handleUpdate} name="age_group">
                   <option>--select one--</option>
+                  {userAgeGroup === "Adult" ? <option value="Adult">Adult</option> : null}
                   <option value="Family">Family</option>
-                  <option value="Adult">Adult</option>
                </select>
                <button>Create</button>
             </form>
