@@ -33,7 +33,7 @@ class ChatsController < ApplicationController
         chat = Chat.find(params[:chat][:id])
         chat.update!(update_params)
         render json: chat
-        ActionCable.server.broadcast "#{chat.title}_channel", {message: {patch_chat: true, id: chat.id, title: chat.title, location: chat.location, description: chat.description}}
+        ActionCable.server.broadcast "#{chat.title}_channel", {message: {patch_chat: true, id: chat.id, text_color: chat.text_color, room_color: chat.room_color, location: chat.location, description: chat.description}}
       rescue ActiveRecord::RecordNotFound => e 
         render json: {error: e.message}, status: 404
       rescue ActiveRecord::RecordInvalid => e
@@ -47,7 +47,7 @@ class ChatsController < ApplicationController
       end
 
       def update_params
-        params.require(:chat).permit(:title, :description, :location, :id)
+        params.require(:chat).permit(:room_color, :text_color, :description, :location, :id)
       end
 
 end

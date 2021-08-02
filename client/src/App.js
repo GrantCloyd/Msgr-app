@@ -21,7 +21,12 @@ function App() {
    }
    const [user, setUser] = useState(initialUserState)
    if (user.name === "Guest")
-      return <Route exact path="/" component={() => <LogInPage user={user} setUser={setUser} />} />
+      return (
+         <Switch>
+            <Route exact path="/" component={() => <LogInPage user={user} setUser={setUser} />} />
+            <Route path="/signup" component={SignUpPage} />
+         </Switch>
+      )
 
    return (
       <Switch>
@@ -36,8 +41,7 @@ function App() {
             <hr />
             <Route exact path="/" component={() => <LogInPage user={user} setUser={setUser} />} />
             <hr />
-            <Route path="/signup" component={SignUpPage} />
-            <hr />
+
             <Route
                path="/createchat"
                component={() => (

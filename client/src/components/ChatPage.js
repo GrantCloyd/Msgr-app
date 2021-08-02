@@ -54,9 +54,11 @@ export default function ChatPage({ userId, userName }) {
    }, [history, userName, id])
 
    const handleErrors = e => console.log(e)
-   const handleSuccess = data => {
-      setRoomInfo(data)
-      setUpdateChat(data)
+   const handleSuccess = e => e
+
+   const handleSuccessChatUpdate = data => {
+      //    setRoomInfo(data)
+      //  setUpdateChat(data)
       setToggleEdit(!toggleEdit)
    }
    const handleChange = e => setNewMessage({ ...newMessage, content: e.target.value })
@@ -99,7 +101,13 @@ export default function ChatPage({ userId, userName }) {
       }
 
       if (message.patch_chat) {
-         console.log(message)
+         setRoomInfo({
+            ...roomInfo,
+            text_color: message.text_color,
+            room_color: message.room_color,
+            description: message.description,
+            location: message.location,
+         })
          return
       }
 
@@ -119,7 +127,8 @@ export default function ChatPage({ userId, userName }) {
 
    const submitChatUpdate = e => {
       e.preventDefault()
-      handleUpdate(updateChat, "chats", id, handleErrors, handleSuccess)
+      console.log(updateChat)
+      handleUpdate(updateChat, "chats", id, handleErrors, handleSuccessChatUpdate)
    }
 
    let cablesMap = cables.map(cable => <Message cable={cable} key={cable.id} userId={userId} />)
@@ -127,18 +136,31 @@ export default function ChatPage({ userId, userName }) {
    // const messageMap = messages.map(message => <p key={message.id}>{message.content}</p>)
 
    return (
-      <div>
+      <div style={{ backgroundColor: roomInfo.room_color, color: roomInfo.text_color }}>
          {toggleEdit ? (
             <>
                <h2>Update Profile</h2>
                <form onSubmit={submitChatUpdate}>
-                  <label htmlFor="title">Title: </label>
-                  <input
-                     onChange={handleChatEdit}
-                     name="title"
-                     type="text"
-                     value={updateChat.title}
-                  />
+                  <label htmlFor="room_color">Room Color: </label>
+                  <select name="room_color" value={updateChat.room_color} onChange={handleChatEdit}>
+                     <option value="white">White</option>
+                     <option value="#F3E9D2">Champagne</option>
+                     <option value="#ccc">Silver</option>
+                     <option value="#2D93AD">Blue</option>
+                     <option value="#DE8F6E">Copper</option>
+                     <option value="#931F1D">Ruby</option>
+                     <option value="#000">Black</option>
+                  </select>
+                  <label htmlFor="text_color">Text Color: </label>
+                  <select name="text_color" value={updateChat.text_color} onChange={handleChatEdit}>
+                     <option value="white">White</option>
+                     <option value="#F3E9D2">Champagne</option>
+                     <option value="#ccc">Silver</option>
+                     <option value="#2D93AD">Blue</option>
+                     <option value="#DE8F6E">Copper</option>
+                     <option value="#931F1D">Ruby</option>
+                     <option value="#000">Black</option>
+                  </select>
                   <label htmlFor="description">Description: </label>
                   <input
                      onChange={handleChatEdit}
