@@ -20,3 +20,19 @@ export async function handleCreate(newObj, path, errorHandler, successHandler) {
       errorHandler(data.error)
    }
 }
+
+export async function handleUpdate(newObj, path, id, errorHandler, successHandler) {
+   const res = await fetch(`${API_ROOT}/${path}/{${id}}`, {
+      method: "PATCH",
+      headers: HEADERS,
+      body: JSON.stringify(newObj),
+   })
+
+   const data = await res.json()
+   if (data.id) {
+      successHandler(data)
+   } else {
+      console.log(data.error)
+      errorHandler(data.error)
+   }
+}

@@ -11,6 +11,11 @@ export default function Message({ cable, userId }) {
          method: "DELETE",
          headers: HEADERS,
       })
+
+      const data = await res.json()
+      if (data.error) {
+         console.log(data.error)
+      }
    }
 
    const handleErrors = e => console.log(e)

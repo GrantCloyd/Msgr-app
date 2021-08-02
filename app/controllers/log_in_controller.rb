@@ -9,8 +9,9 @@ class LogInController < ApplicationController
       else
         render json: {error: "Password and/or Email incorrect"}  
     end
+    end
 
-
+    def verify 
 
     end
 

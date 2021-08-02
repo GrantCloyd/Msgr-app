@@ -25,7 +25,7 @@ export default function CreateChat({ userAgeGroup, userId, userName }) {
 
    useEffect(() => {
       if (userName === "Guest") return history.push("/")
-   }, [])
+   }, [userName, history])
 
    return (
       <div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { API_ROOT, handleCreate, HEADERS } from "../constants"
-import { ActionCable, ActionCableProvider } from "react-actioncable-provider"
+import { ActionCable } from "react-actioncable-provider"
 
 import Message from "./Message"
 
@@ -16,7 +16,7 @@ export default function ChatPage({ userId, userName }) {
       })
    }
 
-   const { title, id } = useParams()
+   const { id } = useParams()
    const history = useHistory()
    const initialState = {
       admin: { name: "", email: "" },
@@ -46,7 +46,7 @@ export default function ChatPage({ userId, userName }) {
          setMessages(data.messages)
       }
       getData()
-   }, [])
+   }, [history, userName, id])
 
    const handleSuccess = e => e
 
@@ -114,7 +114,7 @@ export default function ChatPage({ userId, userName }) {
             For further questions please reach out to channel admin: {roomInfo.admin.name} at{" "}
             <a href={`mailto:${roomInfo.admin.email}`}>{roomInfo.admin.email}</a>
          </h3>
-         {userName === roomInfo.admin.name ? (
+         {userId === roomInfo.admin.id ? (
             <>
                <button>Edit Room Settings</button>{" "}
                <button onClick={handleDeleteChat}>Delete Room</button>{" "}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { API_ROOT } from "../constants"
 import ChatLi from "./ChatLi"
-import { Link, useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 
 export default function ChatList({ userAgeGroup, userName }) {
    const [loading, setLoading] = useState(null)
@@ -19,7 +19,7 @@ export default function ChatList({ userAgeGroup, userName }) {
    useEffect(() => {
       if (userName === "Guest") return history.push("/")
       getData()
-   }, [])
+   }, [userName, history])
 
    const [chatRooms, setChatRooms] = useState([])
 
