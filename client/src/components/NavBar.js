@@ -1,7 +1,7 @@
 import React from "react"
 import { NavLink, Link, useHistory } from "react-router-dom"
 
-export default function NavBar({ userId, setUser, guestState }) {
+export default function NavBar({ userId, setUser, guestState, userImage }) {
    const history = useHistory()
 
    const handleLogOut = () => {
@@ -19,6 +19,7 @@ export default function NavBar({ userId, setUser, guestState }) {
             <NavLink to="/createchat">Create Chat Room</NavLink> ||
             <Link onClick={handleLogOut}>Log-Out</Link>
          </ul>
+         <img src={userImage} />
       </nav>
    )
 }

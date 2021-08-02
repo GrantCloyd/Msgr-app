@@ -33,14 +33,14 @@ export default function ProfilePage({ user, setUser, guestState }) {
    }
 
    const handleErrors = e => console.log(e)
-   const handleSucess = data => {
+   const handleSuccess = data => {
       setUser(data)
       setToggleEdit(!toggleEdit)
    }
 
-   const submitUpdate = e => {
+   const submitProfileUpdate = e => {
       e.preventDefault()
-      handleUpdate(updateProfile, "users", id, handleErrors, handleSucess)
+      handleUpdate(updateProfile, "users", id, handleErrors, handleSuccess)
    }
 
    useEffect(() => {
@@ -56,7 +56,7 @@ export default function ProfilePage({ user, setUser, guestState }) {
                {toggleEdit ? (
                   <>
                      <h2>Update Profile</h2>
-                     <form onSubmit={submitUpdate}>
+                     <form onSubmit={submitProfileUpdate}>
                         <label htmlFor="name">Name: </label>
                         <input
                            onChange={handleProfileUpdate}

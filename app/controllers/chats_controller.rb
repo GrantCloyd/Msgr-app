@@ -28,11 +28,26 @@ class ChatsController < ApplicationController
         ActionCable.server.broadcast "#{chat.title}_channel", {message: {delete_channel: true}}
         head :no_content, status: 204
       end
+
+      def update 
+        chat = Chat.find(params[:chat][:id])
+        chat.update!(update_params)
+        render json: chat
+        ActionCable.server.broadcast "#{chat.title}_channel", {message: {patch_chat: true, id: chat.id, title: chat.title, location: chat.location, description: chat.description}}
+      rescue ActiveRecord::RecordNotFound => e 
+        render json: {error: e.message}, status: 404
+      rescue ActiveRecord::RecordInvalid => e
+        render json: {error: [e.message]}, status: 422
+      end
    
       private 
    
       def chat_params
       params.require(:chat).permit(:title, :admin_id, :description, :age_group, :location)
+      end
+
+      def update_params
+        params.require(:chat).permit(:title, :description, :location, :id)
       end
 
 end

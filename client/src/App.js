@@ -27,7 +27,12 @@ function App() {
       <Switch>
          <div className="App">
             <h1>MSGR APP</h1>
-            <NavBar userId={user.id} setUser={setUser} guestState={initialUserState} />
+            <NavBar
+               userId={user.id}
+               userImage={user.image_url}
+               setUser={setUser}
+               guestState={initialUserState}
+            />
             <hr />
             <Route exact path="/" component={() => <LogInPage user={user} setUser={setUser} />} />
             <hr />
