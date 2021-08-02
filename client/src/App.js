@@ -18,6 +18,8 @@ function App() {
       image_url: "",
       bio: "",
       age_group: "",
+      app_color: "",
+      text_color: "",
    }
    const [user, setUser] = useState(initialUserState)
    if (user.name === "Guest")
@@ -30,7 +32,7 @@ function App() {
 
    return (
       <Switch>
-         <div className="App">
+         <div style={{ backgroundColor: user.app_color, color: user.text_color }} className="App">
             <h1>MSGR APP</h1>
             <NavBar
                userId={user.id}

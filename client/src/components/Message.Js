@@ -4,7 +4,7 @@ import { Popper } from "@material-ui/core"
 
 export default function Message({ cable, userId }) {
    const reactionEl = useRef()
-   const [openState, setOpenState] = useState()
+   const [openState, setOpenState] = useState(false)
 
    async function handleDelete() {
       const res = await fetch(`${API_ROOT}/messages/${cable.id}`, {
@@ -31,7 +31,7 @@ export default function Message({ cable, userId }) {
    }
 
    const reactMap = cable.reactions.map(r => (
-      <p>
+      <p key={r.id}>
          {r.reaction === "Sad"
             ? "😢"
             : r.reaction === "Happy"

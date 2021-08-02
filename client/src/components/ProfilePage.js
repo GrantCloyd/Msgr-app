@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
-import { API_ROOT, HEADERS, handleUpdate } from "../constants"
+import { API_ROOT, HEADERS, handleUpdate, colorOptions } from "../constants"
 import { useHistory } from "react-router-dom"
 
 export default function ProfilePage({ user, setUser, guestState }) {
    //const params = useParams().id
-   let { name, id, age_group, email, bio, image_url } = user
+   let { name, id, age_group, email, bio, image_url, app_color, text_color } = user
    const [deleted, setDeleted] = useState(false)
    const [toggleEdit, setToggleEdit] = useState(false)
    const [updateProfile, setUpdateProfile] = useState(user)
@@ -85,6 +85,20 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            type="textarea"
                            value={updateProfile.image_url}
                         />
+                        <label htmlFor="app_color">App Color: </label>
+                        <select
+                           name="app_color"
+                           value={updateProfile.app_color}
+                           onChange={handleProfileUpdate}>
+                           {colorOptions}
+                        </select>
+                        <label htmlFor="text_color">Text Color: </label>
+                        <select
+                           name="text_color"
+                           value={updateProfile.text_color}
+                           onChange={handleProfileUpdate}>
+                           {colorOptions}
+                        </select>
                         <br />
                         <button> Save Changes</button>
                      </form>
@@ -93,9 +107,6 @@ export default function ProfilePage({ user, setUser, guestState }) {
                   <>
                      <h2>User Profile for {name}</h2>
                      <ul>
-                        <li>
-                           <img alt="Avatar" src={image_url} />{" "}
-                        </li>{" "}
                         <li>Email:{email}</li> <li>Bio: {bio}</li> <li>Age Group: {age_group} </li>
                      </ul>
                   </>

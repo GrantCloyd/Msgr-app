@@ -8,8 +8,8 @@ class ChatsController < ApplicationController
 
     def show
       chat = Chat.find(params[:id])
-    
-      render json: chat
+      
+      render json: chat, serializer: ChatSerializer
     rescue ActiveRecord::RecordNotFound => e
       render json: {error: e.message}, status: 404
     end

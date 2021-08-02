@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
-import { API_ROOT, handleCreate, HEADERS, handleUpdate } from "../constants"
+import { API_ROOT, handleCreate, HEADERS, handleUpdate, colorOptions } from "../constants"
 import { ActionCable } from "react-actioncable-provider"
 
 import Message from "./Message"
@@ -22,10 +22,11 @@ export default function ChatPage({ userId, userName }) {
    const [newMessage, setNewMessage] = useState(initialMessage)
    const [cables, setCables] = useState([])
    const [deleted, setDeleted] = useState(false)
+   const [togglePreviousMessages, setTogglePreviousMessages] = useState(false)
    const [toggleEdit, setToggleEdit] = useState(false)
    const [updateChat, setUpdateChat] = useState(null)
 
-   //autroscroll feature
+   //autoscroll feature
    const messageContainer = useRef()
 
    const scrollToBottom = () => {
@@ -48,6 +49,7 @@ export default function ChatPage({ userId, userName }) {
          const data = await res.json()
          setRoomInfo(data)
          setUpdateChat(data)
+         console.log(data.messages)
          setMessages(data.messages)
       }
       getData()
@@ -133,7 +135,9 @@ export default function ChatPage({ userId, userName }) {
 
    let cablesMap = cables.map(cable => <Message cable={cable} key={cable.id} userId={userId} />)
 
-   // const messageMap = messages.map(message => <p key={message.id}>{message.content}</p>)
+   // const previousMessagesMap = messages.map(message => (
+   //    <Message cable={message} key={message.id} userId={userId} />
+   // ))
 
    return (
       <div style={{ backgroundColor: roomInfo.room_color, color: roomInfo.text_color }}>
@@ -143,23 +147,11 @@ export default function ChatPage({ userId, userName }) {
                <form onSubmit={submitChatUpdate}>
                   <label htmlFor="room_color">Room Color: </label>
                   <select name="room_color" value={updateChat.room_color} onChange={handleChatEdit}>
-                     <option value="white">White</option>
-                     <option value="#F3E9D2">Champagne</option>
-                     <option value="#ccc">Silver</option>
-                     <option value="#2D93AD">Blue</option>
-                     <option value="#DE8F6E">Copper</option>
-                     <option value="#931F1D">Ruby</option>
-                     <option value="#000">Black</option>
+                     {colorOptions}
                   </select>
                   <label htmlFor="text_color">Text Color: </label>
                   <select name="text_color" value={updateChat.text_color} onChange={handleChatEdit}>
-                     <option value="white">White</option>
-                     <option value="#F3E9D2">Champagne</option>
-                     <option value="#ccc">Silver</option>
-                     <option value="#2D93AD">Blue</option>
-                     <option value="#DE8F6E">Copper</option>
-                     <option value="#931F1D">Ruby</option>
-                     <option value="#000">Black</option>
+                     {colorOptions}
                   </select>
                   <label htmlFor="description">Description: </label>
                   <input
@@ -210,8 +202,10 @@ export default function ChatPage({ userId, userName }) {
          </ul>
          <div>
             <h3>Main text box</h3>
-            <p>Standard messages</p>
-            {/* {messageMap} */}
+            {/* <button onClick={() => setTogglePreviousMessages(!togglePreviousMessages)}>
+               View Previous messages?
+            </button>
+            {togglePreviousMessages ? { previousMessagesMap } : null} */}
             <>
                <form className="messageText" onSubmit={handleMessageSubmit}>
                   <label htmlFor="messageText">Message: </label>

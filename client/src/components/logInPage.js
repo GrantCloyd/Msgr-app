@@ -25,7 +25,7 @@ export default function LogInPage({ user, setUser }) {
          {name !== "Guest" ? (
             <div>
                <h2>Welcome to localHost {name}!</h2>
-               <img alt="Avatar" src={image_url} />
+
                <p>You're free to start chatting!</p>
             </div>
          ) : (

@@ -36,3 +36,19 @@ export async function handleUpdate(newObj, path, id, errorHandler, successHandle
       errorHandler(data.error)
    }
 }
+
+export const colorOptions = (
+   <>
+      {" "}
+      <option value="white">White</option>
+      <option value="#F3E9D2">Champagne</option>
+      <option value="#ccc">Silver</option>
+      <option value="#3D3B8E">Dark Slate</option>
+      <option value="#DE8F6E">Copper</option>
+      <option value="#904C77">Plum</option>
+      <option value="#92140C">Ruby</option>
+      <option value="#F7B32B">Honey</option>
+      <option value="#00916E">Emerald</option>
+      <option value="#000">Black</option>
+   </>
+)
