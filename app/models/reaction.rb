@@ -1,5 +1,5 @@
 class Reaction < ApplicationRecord
-    validates :reaction_type, inclusion: ["Happy", "Sad", "Love", "Angry"]
+    validates :reaction_type, inclusion: ["Happy", "Sad", "Love", "Angry", "Gross"]
     validates :message_id, presence: true
     validates :user_id, presence: true
     

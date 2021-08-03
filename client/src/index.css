@@ -1,7 +1,14 @@
 body {
+   background-image: url("https://i.imgur.com/wf5LXJJ.png");
+   background-size: cover;
+   background-repeat: no-repeat;
    text-align: center;
    align-content: center;
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
    margin: 0;
+
    font-size: 18px;
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
       "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -41,4 +48,30 @@ img {
 .messageContainer {
    width: 50%;
    margin: auto;
+}
+.content {
+   flex: 1;
+}
+
+.footer {
+   padding: 20px;
+}
+
+.reactBtn {
+   border-radius: 50%;
+   padding: 0.2% 0.8%;
+   background-color: white;
+   border: 1px solid black;
+   text-decoration: none;
+   transition: 0.4s;
+}
+
+.reactBtn:hover {
+   border: 2px solid gold;
+   -webkit-box-shadow: 0px 0px 22px 0px #000000;
+   box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.reactWrapper {
+   flex-direction: row;
 }

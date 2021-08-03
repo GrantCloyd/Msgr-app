@@ -5,6 +5,7 @@ import { Popper } from "@material-ui/core"
 export default function Message({ cable, userId, setViewUser }) {
    const reactionEl = useRef()
    const [openState, setOpenState] = useState(false)
+   const fontSize = { fontSize: 20 }
 
    async function handleDeleteMessage() {
       const res = await fetch(`${API_ROOT}/messages/${cable.id}`, {
@@ -47,15 +48,19 @@ export default function Message({ cable, userId, setViewUser }) {
          className="reactions"
          onClick={r.user_id === userId ? () => handleDeleteReaction(r.id) : null}
          key={r.id}>
-         {r.reaction === "Sad"
-            ? "😢"
-            : r.reaction === "Happy"
-            ? "😀"
-            : r.reaction === "Love"
-            ? "🥰"
-            : r.reaction === "Angry"
-            ? "😡"
-            : null}{" "}
+         <button style={fontSize} className="reactBtn">
+            {r.reaction === "Sad"
+               ? "😢"
+               : r.reaction === "Happy"
+               ? "😀"
+               : r.reaction === "Love"
+               ? "🥰"
+               : r.reaction === "Angry"
+               ? "😡"
+               : r.reaction === "Gross"
+               ? "🤢"
+               : null}{" "}
+         </button>
          from {r.user}
       </p>
    ))
@@ -86,33 +91,60 @@ export default function Message({ cable, userId, setViewUser }) {
             <p>
                @ {new Date(cable.created_at).toLocaleString()}{" "}
                {userId === cable.user.id ? (
-                  <button onClick={handleDeleteMessage}>❌ Delete</button>
+                  <button className="reactBtn" onClick={handleDeleteMessage}>
+                     ❌{" "}
+                  </button>
                ) : (
                   <>
                      <button
+                        className="reactBtn"
                         onClick={() => setOpenState(!openState)}
                         ref={reactionEl}
                         id={`${cable.id}Reaction`}>
-                        ❗️React
+                        ❗️
                      </button>
                      <Popper
                         id={`${cable.id}Reaction`}
                         anchorEl={reactionEl.current}
-                        placement="right"
+                        placement="right-end"
                         open={openState}>
-                        {" "}
-                        <button onClick={handleReaction} value={"Happy"}>
-                           😃
-                        </button>
-                        <button onClick={handleReaction} value={"Sad"}>
-                           😢
-                        </button>{" "}
-                        <button onClick={handleReaction} value={"Love"}>
-                           🥰
-                        </button>{" "}
-                        <button onClick={handleReaction} value={"Angry"}>
-                           😡
-                        </button>{" "}
+                        <span className="reactWrapper">
+                           <button
+                              style={fontSize}
+                              className="reactBtn"
+                              onClick={handleReaction}
+                              value={"Happy"}>
+                              😃
+                           </button>
+                           <button
+                              style={fontSize}
+                              className="reactBtn"
+                              onClick={handleReaction}
+                              value={"Sad"}>
+                              😢
+                           </button>
+                           <button
+                              style={fontSize}
+                              className="reactBtn"
+                              onClick={handleReaction}
+                              value={"Love"}>
+                              🥰
+                           </button>
+                           <button
+                              style={fontSize}
+                              className="reactBtn"
+                              onClick={handleReaction}
+                              value={"Angry"}>
+                              😡
+                           </button>
+                           <button
+                              style={fontSize}
+                              className="reactBtn"
+                              onClick={handleReaction}
+                              value={"Gross"}>
+                              🤢
+                           </button>
+                        </span>
                      </Popper>
                   </>
                )}
