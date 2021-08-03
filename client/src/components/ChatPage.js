@@ -4,6 +4,7 @@ import { API_ROOT, handleCreate, HEADERS, handleUpdate, colorOptions } from "../
 import { ActionCable } from "react-actioncable-provider"
 import ViewUserBox from "./ViewUserBox"
 import Message from "./Message"
+import CloseTwoToneIcon from "@material-ui/icons/CloseTwoTone"
 
 export default function ChatPage({ userId, userName }) {
    const { id } = useParams()
@@ -170,7 +171,9 @@ export default function ChatPage({ userId, userName }) {
    ))
 
    return (
-      <div style={{ backgroundColor: roomInfo.room_color, color: roomInfo.text_color }}>
+      <div
+         className="chatPage"
+         style={{ backgroundColor: roomInfo.room_color, color: roomInfo.text_color }}>
          {toggleEdit ? (
             <>
                <h2>Update Profile</h2>
@@ -229,7 +232,9 @@ export default function ChatPage({ userId, userName }) {
                <span>
                   <h4>
                      View User Details{" "}
-                     <button onClick={() => setViewUser(initialUserView)}>🅧</button>
+                     <button onClick={() => setViewUser(initialUserView)}>
+                        <CloseTwoToneIcon />
+                     </button>
                   </h4>
                   <ViewUserBox
                      reset={initialUserView}

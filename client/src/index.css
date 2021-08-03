@@ -58,20 +58,23 @@ img {
 }
 
 .reactBtn {
-   border-radius: 50%;
+   border-radius: 30%;
    padding: 0.2% 0.8%;
-   background-color: white;
+   background-color: #ddd;
    border: 1px solid black;
    text-decoration: none;
    transition: 0.4s;
 }
 
 .reactBtn:hover {
-   border: 2px solid gold;
-   -webkit-box-shadow: 0px 0px 22px 0px #000000;
-   box-shadow: 0px 0px 15px 0px #000000;
+   -webkit-box-shadow: 0px 1px 3px 0px #111;
+   box-shadow: 0px 1px 3px 0px #111;
 }
 
 .reactWrapper {
    flex-direction: row;
+}
+
+.chatPage {
+   padding-top: 40px;
 }

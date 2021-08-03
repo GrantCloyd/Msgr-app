@@ -10,6 +10,7 @@ import ChatPage from "./components/ChatPage"
 import NavBar from "./components/NavBar"
 import ProfilePage from "./components/ProfilePage"
 import ChatList from "./components/ChatList"
+import Footer from "./components/Footer"
 
 function App() {
    const initialUserState = {
@@ -33,38 +34,49 @@ function App() {
    return (
       <Switch>
          <div style={{ backgroundColor: user.app_color, color: user.text_color }} className="App">
-            <h1>MSGR APP</h1>
-            <NavBar
-               userId={user.id}
-               userImage={user.image_url}
-               setUser={setUser}
-               guestState={initialUserState}
-            />
+            <div className="content">
+               <h1>MSGR APP</h1>
+               <NavBar
+                  userId={user.id}
+                  userImage={user.image_url}
+                  setUser={setUser}
+                  guestState={initialUserState}
+               />
 
-            <Route exact path="/" component={() => <LogInPage user={user} setUser={setUser} />} />
+               <Route
+                  exact
+                  path="/"
+                  component={() => <LogInPage user={user} setUser={setUser} />}
+               />
 
-            <Route
-               path="/createchat"
-               component={() => (
-                  <CreateChat userAgeGroup={user.age_group} userName={user.name} userId={user.id} />
-               )}
-            />
+               <Route
+                  path="/createchat"
+                  component={() => (
+                     <CreateChat
+                        userAgeGroup={user.age_group}
+                        userName={user.name}
+                        userId={user.id}
+                     />
+                  )}
+               />
 
-            <Route
-               path="/find"
-               component={() => <ChatList userAgeGroup={user.age_group} userName={user.name} />}
-            />
-            <Route
-               path="/chat/:title/:id"
-               component={() => <ChatPage userName={user.name} userId={user.id} />}
-            />
+               <Route
+                  path="/find"
+                  component={() => <ChatList userAgeGroup={user.age_group} userName={user.name} />}
+               />
+               <Route
+                  path="/chat/:title/:id"
+                  component={() => <ChatPage userName={user.name} userId={user.id} />}
+               />
 
-            <Route
-               path="/profile/:id"
-               component={() => (
-                  <ProfilePage user={user} setUser={setUser} guestState={initialUserState} />
-               )}
-            />
+               <Route
+                  path="/profile/:id"
+                  component={() => (
+                     <ProfilePage user={user} setUser={setUser} guestState={initialUserState} />
+                  )}
+               />
+            </div>
+            <Footer />
          </div>
       </Switch>
    )

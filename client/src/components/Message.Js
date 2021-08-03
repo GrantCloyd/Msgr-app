@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react"
 import { API_ROOT, HEADERS, handleCreate } from "../constants"
 import { Popper } from "@material-ui/core"
+import DeleteTwoToneIcon from "@material-ui/icons/DeleteTwoTone"
+import EmojiEmotionsTwoToneIcon from "@material-ui/icons/EmojiEmotionsTwoTone"
 
 export default function Message({ cable, userId, setViewUser }) {
    const reactionEl = useRef()
@@ -92,7 +94,7 @@ export default function Message({ cable, userId, setViewUser }) {
                @ {new Date(cable.created_at).toLocaleString()}{" "}
                {userId === cable.user.id ? (
                   <button className="reactBtn" onClick={handleDeleteMessage}>
-                     ❌{" "}
+                     <DeleteTwoToneIcon />{" "}
                   </button>
                ) : (
                   <>
@@ -101,7 +103,7 @@ export default function Message({ cable, userId, setViewUser }) {
                         onClick={() => setOpenState(!openState)}
                         ref={reactionEl}
                         id={`${cable.id}Reaction`}>
-                        ❗️
+                        <EmojiEmotionsTwoToneIcon />
                      </button>
                      <Popper
                         id={`${cable.id}Reaction`}
