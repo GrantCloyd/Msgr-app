@@ -18,7 +18,7 @@ export default function ChatPage({ userId, userName }) {
    }
    const [errors, setErrors] = useState(null)
    const [roomInfo, setRoomInfo] = useState(initialState)
-   const [messages, setMessages] = useState([])
+
    const [newMessage, setNewMessage] = useState(initialMessage)
    const [cables, setCables] = useState([])
    const [deleted, setDeleted] = useState(false)
@@ -49,8 +49,6 @@ export default function ChatPage({ userId, userName }) {
          const data = await res.json()
          setRoomInfo(data)
          setUpdateChat(data)
-         console.log(data.messages)
-         setMessages(data.messages)
       }
       getData()
    }, [history, userName, id])
@@ -59,8 +57,6 @@ export default function ChatPage({ userId, userName }) {
    const handleSuccess = e => e
 
    const handleSuccessChatUpdate = data => {
-      //    setRoomInfo(data)
-      //  setUpdateChat(data)
       setToggleEdit(!toggleEdit)
    }
    const handleChange = e => setNewMessage({ ...newMessage, content: e.target.value })
@@ -89,7 +85,7 @@ export default function ChatPage({ userId, userName }) {
       if (message.reaction) {
          let update = cables.map(cable => {
             if (
-               cable.id === message.id &&
+               cable.id === message.message_id &&
                !cable.reactions.map(r => r.user).includes(message.user)
             ) {
                return { ...cable, reactions: [...cable.reactions, message] }
@@ -99,6 +95,19 @@ export default function ChatPage({ userId, userName }) {
          })
 
          setCables([...update])
+         return
+      }
+
+      if (message.delete_reaction) {
+         let update = cables.map(c => {
+            if (c.id === message.message_id) {
+               return { ...c, reactions: c.reactions.filter(r => r.id !== message.id) }
+            } else {
+               return c
+            }
+         })
+
+         setCables(update)
          return
       }
 
@@ -134,10 +143,6 @@ export default function ChatPage({ userId, userName }) {
    }
 
    let cablesMap = cables.map(cable => <Message cable={cable} key={cable.id} userId={userId} />)
-
-   // const previousMessagesMap = messages.map(message => (
-   //    <Message cable={message} key={message.id} userId={userId} />
-   // ))
 
    return (
       <div style={{ backgroundColor: roomInfo.room_color, color: roomInfo.text_color }}>
