@@ -20,6 +20,7 @@ export default function NavBar({ userId, setUser, guestState, userImage }) {
             <Link onClick={handleLogOut}>Log-Out</Link>
          </ul>
          <img src={userImage} />
+         <hr />
       </nav>
    )
 }

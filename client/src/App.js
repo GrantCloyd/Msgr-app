@@ -40,9 +40,8 @@ function App() {
                setUser={setUser}
                guestState={initialUserState}
             />
-            <hr />
+
             <Route exact path="/" component={() => <LogInPage user={user} setUser={setUser} />} />
-            <hr />
 
             <Route
                path="/createchat"
@@ -50,7 +49,7 @@ function App() {
                   <CreateChat userAgeGroup={user.age_group} userName={user.name} userId={user.id} />
                )}
             />
-            <hr />
+
             <Route
                path="/find"
                component={() => <ChatList userAgeGroup={user.age_group} userName={user.name} />}
@@ -59,7 +58,7 @@ function App() {
                path="/chat/:title/:id"
                component={() => <ChatPage userName={user.name} userId={user.id} />}
             />
-            <hr />
+
             <Route
                path="/profile/:id"
                component={() => (

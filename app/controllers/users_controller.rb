@@ -19,9 +19,10 @@ class UsersController < ApplicationController
    end
 
   def show 
-   user = User.find(session[:user_id])
-   render json: user
-   
+   user = User.find(params[:id])
+   render json: user, only: [:name, :bio, :email, :text_color, :app_color, :image_url], status: 200
+  rescue ActiveRecord::RecordNotFound => e 
+    render json: {error: e.message}, status: 404
   end
 
   def update 

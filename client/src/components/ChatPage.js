@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { API_ROOT, handleCreate, HEADERS, handleUpdate, colorOptions } from "../constants"
 import { ActionCable } from "react-actioncable-provider"
-
+import ViewUserBox from "./ViewUserBox"
 import Message from "./Message"
 
 export default function ChatPage({ userId, userName }) {
@@ -16,6 +16,16 @@ export default function ChatPage({ userId, userName }) {
       user_id: userId,
       chat_id: id,
    }
+
+   const initialUserView = {
+      name: "",
+      email: "",
+      image_url: "",
+      text_color: "",
+      app_color: "",
+      bio: "",
+   }
+
    const [errors, setErrors] = useState(null)
    const [roomInfo, setRoomInfo] = useState(initialState)
 
@@ -25,6 +35,8 @@ export default function ChatPage({ userId, userName }) {
    const [togglePreviousMessages, setTogglePreviousMessages] = useState(false)
    const [toggleEdit, setToggleEdit] = useState(false)
    const [updateChat, setUpdateChat] = useState(null)
+   const [usersInRoom, setUsersInRoom] = useState([])
+   const [viewUser, setViewUser] = useState(initialUserView)
 
    //autoscroll feature
    const messageContainer = useRef()
@@ -122,6 +134,16 @@ export default function ChatPage({ userId, userName }) {
          return
       }
 
+      // if (message.user_in_room && !usersInRoom.includes(message.user)) {
+      //    setUsersInRoom([...usersInRoom, message.user])
+      //    return
+      // }
+
+      // if (message.user_exit_room) {
+      //    console.log(message.user)
+      //    return
+      // }
+
       if (!cables.map(cable => cable.id).includes(message.id)) {
          setCables([...cables, message])
       }
@@ -142,7 +164,10 @@ export default function ChatPage({ userId, userName }) {
       handleUpdate(updateChat, "chats", id, handleErrors, handleSuccessChatUpdate)
    }
 
-   let cablesMap = cables.map(cable => <Message cable={cable} key={cable.id} userId={userId} />)
+   //let usersMap = usersInRoom.map(user => <p key={user}>{user}</p>)
+   let cablesMap = cables.map(cable => (
+      <Message cable={cable} setViewUser={setViewUser} key={cable.id} userId={userId} />
+   ))
 
    return (
       <div style={{ backgroundColor: roomInfo.room_color, color: roomInfo.text_color }}>
@@ -179,9 +204,9 @@ export default function ChatPage({ userId, userName }) {
             </>
          ) : (
             <>
-               <h2>Welcome to - {roomInfo.title} Chat Room - </h2>
-               <p>Description: {roomInfo.description}</p>
-               <h3>Location: This channel is based in {roomInfo.location} </h3>
+               <h2>Welcome to {roomInfo.title} </h2>
+               <h5>Description: {roomInfo.description}</h5>
+               <h3>Location: {roomInfo.location} </h3>
                <h3>
                   For further questions please reach out to channel admin: {roomInfo.admin.name} at{" "}
                   <a href={`mailto:${roomInfo.admin.email}`}>{roomInfo.admin.email}</a>
@@ -199,18 +224,23 @@ export default function ChatPage({ userId, userName }) {
                ? "This room is intended for all ages"
                : "This room is not intended for young children"}
          </h3>
-         <ul>
-            {" "}
-            Users In Chatroom Now:
-            <li>user_1</li>
-            <li>user_2</li>
-         </ul>
+         {viewUser.name !== "" ? (
+            <div className="viewerBox">
+               <span>
+                  <h4>
+                     View User Details{" "}
+                     <button onClick={() => setViewUser(initialUserView)}>🅧</button>
+                  </h4>
+                  <ViewUserBox
+                     reset={initialUserView}
+                     setViewUser={setViewUser}
+                     viewUser={viewUser}
+                  />
+               </span>
+            </div>
+         ) : null}
          <div>
-            <h3>Main text box</h3>
-            {/* <button onClick={() => setTogglePreviousMessages(!togglePreviousMessages)}>
-               View Previous messages?
-            </button>
-            {togglePreviousMessages ? { previousMessagesMap } : null} */}
+            <h3 className="messageContainer">Messages</h3>
             <>
                <form className="messageText" onSubmit={handleMessageSubmit}>
                   <label htmlFor="messageText">Message: </label>
@@ -226,7 +256,7 @@ export default function ChatPage({ userId, userName }) {
                </form>
             </>
             <ActionCable
-               channel={{ channel: `ChatsChannel`, params: roomInfo.title }}
+               channel={{ channel: `ChatsChannel`, room_title: roomInfo.title, user: userName }}
                onReceived={handleReceivedChat}>
                <br />
                <div ref={messageContainer} className="messageContainer">

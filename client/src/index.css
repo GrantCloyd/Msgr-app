@@ -28,3 +28,17 @@ img {
    position: sticky;
    top: 50%;
 }
+
+.viewerBox {
+   float: right;
+   position: sticky;
+   top: 30%;
+   padding: 5px;
+   max-height: 300px;
+   max-width: 300px;
+}
+
+.messageContainer {
+   width: 50%;
+   margin: auto;
+}

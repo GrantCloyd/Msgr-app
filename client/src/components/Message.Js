@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react"
 import { API_ROOT, HEADERS, handleCreate } from "../constants"
 import { Popper } from "@material-ui/core"
 
-export default function Message({ cable, userId }) {
+export default function Message({ cable, userId, setViewUser }) {
    const reactionEl = useRef()
    const [openState, setOpenState] = useState(false)
 
@@ -56,18 +56,32 @@ export default function Message({ cable, userId }) {
             : r.reaction === "Angry"
             ? "😡"
             : null}{" "}
-         from {r.user} {r.user_id}
+         from {r.user}
       </p>
    ))
+
+   async function handleViewUser(id) {
+      let res = await fetch(`${API_ROOT}/users/${id}`)
+      let data = await res.json()
+      if (data.id) {
+         setViewUser(data)
+      } else {
+         alert(`Status ${data.status} : ${data.error}`)
+      }
+   }
 
    return (
       <>
          <div key={cable.id}>
             <hr />
             <p>
-               <img className="msgImg" alt={`${cable.user.name}`} src={cable.user.image_url} />{" "}
-               {cable.user.name} : {cable.content}{" "}
-               {cable.reactions.length > 0 || cable.reactions === undefined ? reactMap : null}
+               <img
+                  onClick={userId !== cable.user.id ? () => handleViewUser(cable.user.id) : null}
+                  className="msgImg"
+                  alt={`${cable.user.name}`}
+                  src={cable.user.image_url}
+               />{" "}
+               {cable.user.name} : {cable.content} {cable.reactions.length > 0 ? reactMap : null}
             </p>{" "}
             <p>
                @ {new Date(cable.created_at).toLocaleString()}{" "}
