@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { handleCreate } from "../constants"
 import { useHistory } from "react-router-dom"
+import AddCircleTwoToneIcon from "@material-ui/icons/AddCircleTwoTone"
+import { Button, Card } from "@material-ui/core"
 
 export default function CreateChat({ userAgeGroup, userId, userName }) {
    const initialFormState = {
@@ -29,7 +31,7 @@ export default function CreateChat({ userAgeGroup, userId, userName }) {
 
    return (
       <div>
-         <div>
+         <Card className="divider">
             <h2>Create Chat Room!</h2>
             {errors ? <p>{errors}</p> : null}
             <form onSubmit={handleSubmit}>
@@ -63,10 +65,12 @@ export default function CreateChat({ userAgeGroup, userId, userName }) {
                   {userAgeGroup === "Adult" ? <option value="Adult">Adult</option> : null}
                   <option value="Family">Family</option>
                </select>
-               <button>Create</button>
+               <Button type="submit" variant="contained">
+                  <AddCircleTwoToneIcon />{" "}
+               </Button>
             </form>
             <p>*Note: Age group will determine who can access your chatroom</p>
-         </div>
+         </Card>
       </div>
    )
 }

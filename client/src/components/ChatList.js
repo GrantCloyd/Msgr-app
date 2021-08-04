@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom"
 import { Card, Button } from "@material-ui/core"
 import RefreshTwoToneIcon from "@material-ui/icons/RefreshTwoTone"
 
-export default function ChatList({ userAgeGroup, userName }) {
+export default function ChatList({ userAgeGroup, userName, userId }) {
    const [loading, setLoading] = useState(null)
    const history = useHistory()
 
@@ -14,7 +14,7 @@ export default function ChatList({ userAgeGroup, userName }) {
       const res = await fetch(`${API_ROOT}/chats`)
       const data = await res.json()
       setChatRooms(data)
-
+      console.log(data)
       setLoading(null)
    }
 
@@ -25,10 +25,10 @@ export default function ChatList({ userAgeGroup, userName }) {
 
    const [chatRooms, setChatRooms] = useState([])
 
-   const allRoomList = chatRooms.map(chat => <ChatLi {...chat} key={chat.id} />)
+   const allRoomList = chatRooms.map(chat => <ChatLi {...chat} key={chat.id} userId={userId} />)
    const noAdultRoomList = chatRooms
       .filter(chat => chat.age_group === "Family")
-      .map(chat => <ChatLi {...chat} key={chat.id} />)
+      .map(chat => <ChatLi userId={userId} {...chat} key={chat.id} />)
 
    return (
       <div>

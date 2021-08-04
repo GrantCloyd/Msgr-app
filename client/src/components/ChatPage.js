@@ -7,6 +7,9 @@ import ViewUserBox from "./ViewUserBox"
 import Message from "./Message"
 import CloseTwoToneIcon from "@material-ui/icons/CloseTwoTone"
 import KeyboardBackspaceTwoToneIcon from "@material-ui/icons/KeyboardBackspaceTwoTone"
+import AssistantTwoToneIcon from "@material-ui/icons/AssistantTwoTone"
+import DeleteTwoToneIcon from "@material-ui/icons/DeleteTwoTone"
+import SaveTwoToneIcon from "@material-ui/icons/SaveTwoTone"
 
 export default function ChatPage({ userId, userName }) {
    const { id } = useParams()
@@ -175,11 +178,11 @@ export default function ChatPage({ userId, userName }) {
    ))
 
    return (
-      <div
+      <Card
          className="chatPage"
          style={{ backgroundColor: roomInfo.room_color, color: roomInfo.text_color }}>
          {toggleEdit ? (
-            <>
+            <Card>
                <h2>Update Profile</h2>
                <form onSubmit={submitChatUpdate}>
                   <label htmlFor="room_color">Room Color: </label>
@@ -206,11 +209,33 @@ export default function ChatPage({ userId, userName }) {
                   />
 
                   <br />
-                  <button> Save Changes</button>
+                  <Button type="submit" variant="contained">
+                     <SaveTwoToneIcon />
+                  </Button>
                </form>
-            </>
+            </Card>
          ) : (
             <Card>
+               {userId === roomInfo.admin.id ? (
+                  <>
+                     <Button
+                        type="submit"
+                        className="floatButton"
+                        variant="contained"
+                        onClick={handleDeleteChat}>
+                        {" "}
+                        <DeleteTwoToneIcon />{" "}
+                     </Button>{" "}
+                     <Button
+                        type="submit"
+                        className="floatButton"
+                        variant="contained"
+                        onClick={() => setToggleEdit(!toggleEdit)}>
+                        {" "}
+                        <AssistantTwoToneIcon />
+                     </Button>{" "}
+                  </>
+               ) : null}
                <Button
                   className="floatButton"
                   onClick={handleBack}
@@ -228,12 +253,7 @@ export default function ChatPage({ userId, userName }) {
                </h3>
             </Card>
          )}
-         {userId === roomInfo.admin.id ? (
-            <>
-               <button onClick={() => setToggleEdit(!toggleEdit)}>Edit Room Settings</button>{" "}
-               <button onClick={handleDeleteChat}>Delete Room</button>{" "}
-            </>
-         ) : null}
+
          <h3>
             {roomInfo.age_group === "Family"
                ? "This room is intended for all ages"
@@ -282,6 +302,6 @@ export default function ChatPage({ userId, userName }) {
                </div>
             </ActionCable>
          </div>
-      </div>
+      </Card>
    )
 }

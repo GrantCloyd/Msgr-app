@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { handleCreate } from "../constants"
+import { Card, Button } from "@material-ui/core"
 
 export default function SignUpPage() {
    const initialState = {
@@ -36,54 +37,58 @@ export default function SignUpPage() {
 
    return (
       <div>
-         <h2>Sign Up!</h2>
-         {errors ? <p>{errors}</p> : null}
-         <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Name: </label>
-            <input
-               onChange={handleUpdate}
-               autocomplete="name"
-               type="text"
-               value={newSignUp.name}
-               name="name"
-               placeholder="Name"
-            />
-            <label htmlFor="email">Email: </label>
-            <input
-               onChange={handleUpdate}
-               value={newSignUp.email}
-               autocomplete="email"
-               type="text"
-               name="email"
-               placeholder="Email Address"
-            />
-            <label htmlFor="password">Password: </label>
-            <input
-               value={newSignUp.password}
-               onChange={handleUpdate}
-               type="password"
-               name="password"
-               placeholder="Password"
-            />
-            <label htmlFor="confirmPassword">Confirm Password: </label>
-            <input
-               value={newSignUp.confirmPassword}
-               onChange={handleUpdate}
-               autocomplete="password"
-               type="password"
-               name="confirmPassword"
-               placeholder="Re-enter your password"
-            />
-            <label htmlFor="age_group">Select Age Group: </label>
-            <select value={newSignUp.age_group} onChange={handleUpdate} name="age_group">
-               Age Group
-               <option>--select one--</option>
-               <option value="Family">Family</option>
-               <option value="Adult">Adult</option>
-            </select>
-            <button>Submit</button>
-         </form>
-         <p>*Note: Age group will determine chatrooms that you can access</p>
+         <Card className="signUpLogIn">
+            <h2>Sign Up!</h2>
+            {errors ? <p>{errors}</p> : null}
+            <form onSubmit={handleSubmit}>
+               <label htmlFor="name">Name: </label>
+               <input
+                  onChange={handleUpdate}
+                  autocomplete="name"
+                  type="text"
+                  value={newSignUp.name}
+                  name="name"
+                  placeholder="Name"
+               />
+               <label htmlFor="email">Email: </label>
+               <input
+                  onChange={handleUpdate}
+                  value={newSignUp.email}
+                  autocomplete="email"
+                  type="text"
+                  name="email"
+                  placeholder="Email Address"
+               />
+               <label htmlFor="password">Password: </label>
+               <input
+                  value={newSignUp.password}
+                  onChange={handleUpdate}
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+               />
+               <label htmlFor="confirmPassword">Confirm Password: </label>
+               <input
+                  value={newSignUp.confirmPassword}
+                  onChange={handleUpdate}
+                  autocomplete="password"
+                  type="password"
+                  name="confirmPassword"
+                  placeholder="Re-enter your password"
+               />
+               <label htmlFor="age_group">Select Age Group: </label>
+               <select value={newSignUp.age_group} onChange={handleUpdate} name="age_group">
+                  Age Group
+                  <option>--select one--</option>
+                  <option value="Family">Family</option>
+                  <option value="Adult">Adult</option>
+               </select>
+               <Button type="submit" color="primary" variant="contained">
+                  Submit
+               </Button>
+            </form>
+            <p>*Note: Age group will determine which chatrooms you can access</p>
+         </Card>
       </div>
    )
 }

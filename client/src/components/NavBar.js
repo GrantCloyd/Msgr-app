@@ -5,7 +5,7 @@ import AccountCircleTwoToneIcon from "@material-ui/icons/AccountCircleTwoTone"
 import ForumTwoToneIcon from "@material-ui/icons/ForumTwoTone"
 import ExitToAppTwoToneIcon from "@material-ui/icons/ExitToAppTwoTone"
 import AddCircleTwoToneIcon from "@material-ui/icons/AddCircleTwoTone"
-import { Button } from "@material-ui/core"
+import { Button, Card } from "@material-ui/core"
 
 export default function NavBar({ userId, setUser, guestState, userImage }) {
    const history = useHistory()
@@ -16,42 +16,43 @@ export default function NavBar({ userId, setUser, guestState, userImage }) {
    }
    return (
       <nav>
-         {" "}
-         <Button type="submit" variant="contained">
-            <NavLink to="/">
-               {" "}
-               <HomeTwoToneIcon />
-            </NavLink>
-         </Button>{" "}
-         |{" "}
-         <Button type="submit" variant="contained">
-            <NavLink to={`/profile/${userId}`}>
-               <AccountCircleTwoToneIcon />{" "}
-            </NavLink>
-         </Button>{" "}
-         |{" "}
-         <Button type="submit" variant="contained">
-            <NavLink to="/find">
-               {" "}
-               <ForumTwoToneIcon />{" "}
-            </NavLink>{" "}
-         </Button>{" "}
-         |{" "}
-         <Button type="submit" variant="contained">
-            <NavLink to="/createchat">
-               <AddCircleTwoToneIcon />
-            </NavLink>
-         </Button>{" "}
-         |{" "}
-         <Button type="submit" variant="contained">
-            <Link onClick={handleLogOut}>
-               <ExitToAppTwoToneIcon />
-            </Link>
-         </Button>
-         <br />
-         <br />
-         <img src={userImage} />
-         <hr />
+         <Card>
+            {" "}
+            <Button type="submit" variant="contained">
+               <NavLink to="/">
+                  {" "}
+                  <HomeTwoToneIcon />
+               </NavLink>
+            </Button>{" "}
+            |{" "}
+            <Button type="submit" variant="contained">
+               <NavLink to={`/profile/${userId}`}>
+                  <AccountCircleTwoToneIcon />{" "}
+               </NavLink>
+            </Button>{" "}
+            |{" "}
+            <Button type="submit" variant="contained">
+               <NavLink to="/find">
+                  {" "}
+                  <ForumTwoToneIcon />{" "}
+               </NavLink>{" "}
+            </Button>{" "}
+            |{" "}
+            <Button type="submit" variant="contained">
+               <NavLink to="/createchat">
+                  <AddCircleTwoToneIcon />
+               </NavLink>
+            </Button>{" "}
+            |{" "}
+            <Button type="submit" variant="contained">
+               <Link onClick={handleLogOut}>
+                  <ExitToAppTwoToneIcon />
+               </Link>
+            </Button>
+            <br />
+            <br />
+            <img src={userImage} />
+         </Card>
       </nav>
    )
 }

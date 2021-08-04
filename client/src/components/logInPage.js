@@ -1,6 +1,8 @@
 import React, { useState } from "react"
+import LoggedInPage from "./LoggedInPage"
 import { Link } from "react-router-dom"
 import { handleCreate } from "../constants"
+import { Card, Button } from "@material-ui/core"
 
 export default function LogInPage({ user, setUser }) {
    //move user and userState into App to set state of user throughout app and not just at this level
@@ -21,40 +23,41 @@ export default function LogInPage({ user, setUser }) {
 
    return (
       <div>
-         {errors ? <p>{errors}</p> : null}
          {name !== "Guest" ? (
-            <div>
-               <h2>Welcome to localHost {name}!</h2>
-
-               <p>You're free to start chatting!</p>
-            </div>
+            <LoggedInPage name={name} />
          ) : (
             <>
-               <h2>Log In to start chatting</h2>
-               <form onSubmit={handleSubmit}>
-                  <label htmlFor="email">Email: </label>
-                  <input
-                     value={newLogin.email}
-                     onChange={handleUpdate}
-                     type="text"
-                     name="email"
-                     placeholder="Email Address"
-                  />
-                  <br />
-                  <label htmlFor="password">Password: </label>
-                  <input
-                     value={newLogin.password}
-                     onChange={handleUpdate}
-                     type="password"
-                     name="password"
-                     placeholder="Password"
-                  />
-                  <br />
-                  <button>Submit</button>
-               </form>
-               <p>
-                  Don't have a log-in? <Link to="/signup">Sign-Up here!</Link>
-               </p>
+               <Card className="signUpLogIn">
+                  <img alt="logo" className="logo" src="https://i.imgur.com/k47edoR.png" />
+                  <h2>Log In to start chatting</h2>
+                  {errors ? <p>{errors}</p> : null}
+                  <form onSubmit={handleSubmit}>
+                     <label htmlFor="email">Email: </label>
+                     <input
+                        value={newLogin.email}
+                        onChange={handleUpdate}
+                        type="text"
+                        name="email"
+                        placeholder="Email Address"
+                     />
+                     <br />
+                     <label htmlFor="password">Password: </label>
+                     <input
+                        value={newLogin.password}
+                        onChange={handleUpdate}
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                     />
+                     <br />
+                     <Button type="submit" color="primary" variant="contained">
+                        Submit
+                     </Button>
+                  </form>
+                  <p>
+                     Don't have a log-in? <Link to="/signup">Sign-Up here!</Link>
+                  </p>
+               </Card>
             </>
          )}
       </div>

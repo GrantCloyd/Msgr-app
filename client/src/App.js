@@ -2,7 +2,7 @@ import "./App.css"
 
 import { Switch, Route } from "react-router-dom"
 import { useState } from "react"
-
+import Header from "./components/Header"
 import LogInPage from "./components/logInPage"
 import SignUpPage from "./components/SignUpPage"
 import CreateChat from "./components/CreateChat"
@@ -34,8 +34,8 @@ function App() {
    return (
       <Switch>
          <div style={{ backgroundColor: user.app_color, color: user.text_color }} className="App">
+            <Header />
             <div className="content">
-               <h1>MSGR APP</h1>
                <NavBar
                   userId={user.id}
                   userImage={user.image_url}
@@ -62,7 +62,13 @@ function App() {
 
                <Route
                   path="/find"
-                  component={() => <ChatList userAgeGroup={user.age_group} userName={user.name} />}
+                  component={() => (
+                     <ChatList
+                        userId={user.id}
+                        userAgeGroup={user.age_group}
+                        userName={user.name}
+                     />
+                  )}
                />
                <Route
                   path="/chat/:title/:id"

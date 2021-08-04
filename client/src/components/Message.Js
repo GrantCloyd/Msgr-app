@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 import { API_ROOT, HEADERS, handleCreate } from "../constants"
-import { Popper } from "@material-ui/core"
+import { Popper, Card, Button } from "@material-ui/core"
 import DeleteTwoToneIcon from "@material-ui/icons/DeleteTwoTone"
 import EmojiEmotionsTwoToneIcon from "@material-ui/icons/EmojiEmotionsTwoTone"
 
@@ -78,9 +78,8 @@ export default function Message({ cable, userId, setViewUser }) {
    }
 
    return (
-      <>
+      <Card className="divider">
          <div key={cable.id}>
-            <hr />
             <p>
                <img
                   onClick={userId !== cable.user.id ? () => handleViewUser(cable.user.id) : null}
@@ -90,69 +89,72 @@ export default function Message({ cable, userId, setViewUser }) {
                />{" "}
                {cable.user.name} : {cable.content} {cable.reactions.length > 0 ? reactMap : null}
             </p>{" "}
-            <p>
-               @ {new Date(cable.created_at).toLocaleString()}{" "}
-               {userId === cable.user.id ? (
-                  <button className="reactBtn" onClick={handleDeleteMessage}>
-                     <DeleteTwoToneIcon />{" "}
-                  </button>
-               ) : (
-                  <>
-                     <button
-                        className="reactBtn"
-                        onClick={() => setOpenState(!openState)}
-                        ref={reactionEl}
-                        id={`${cable.id}Reaction`}>
-                        <EmojiEmotionsTwoToneIcon />
-                     </button>
-                     <Popper
-                        id={`${cable.id}Reaction`}
-                        anchorEl={reactionEl.current}
-                        placement="right-end"
-                        open={openState}>
-                        <span className="reactWrapper">
-                           <button
-                              style={fontSize}
-                              className="reactBtn"
-                              onClick={handleReaction}
-                              value={"Happy"}>
-                              😃
-                           </button>
-                           <button
-                              style={fontSize}
-                              className="reactBtn"
-                              onClick={handleReaction}
-                              value={"Sad"}>
-                              😢
-                           </button>
-                           <button
-                              style={fontSize}
-                              className="reactBtn"
-                              onClick={handleReaction}
-                              value={"Love"}>
-                              🥰
-                           </button>
-                           <button
-                              style={fontSize}
-                              className="reactBtn"
-                              onClick={handleReaction}
-                              value={"Angry"}>
-                              😡
-                           </button>
-                           <button
-                              style={fontSize}
-                              className="reactBtn"
-                              onClick={handleReaction}
-                              value={"Gross"}>
-                              🤢
-                           </button>
-                        </span>
-                     </Popper>
-                  </>
-               )}
-            </p>
-            <hr />
+            <p>@ {new Date(cable.created_at).toLocaleString()} </p>
+            {userId === cable.user.id ? (
+               <Button
+                  className="floatLeftButton"
+                  type="submit"
+                  variant="contained"
+                  onClick={handleDeleteMessage}>
+                  <DeleteTwoToneIcon />{" "}
+               </Button>
+            ) : (
+               <>
+                  <Button
+                     className="floatButton"
+                     type="submit"
+                     variant="contained"
+                     onClick={() => setOpenState(!openState)}
+                     ref={reactionEl}
+                     id={`${cable.id}Reaction`}>
+                     <EmojiEmotionsTwoToneIcon />
+                  </Button>
+                  <Popper
+                     id={`${cable.id}Reaction`}
+                     anchorEl={reactionEl.current}
+                     placement="right-end"
+                     open={openState}>
+                     <span className="reactWrapper">
+                        <button
+                           style={fontSize}
+                           className="reactBtn"
+                           onClick={handleReaction}
+                           value={"Happy"}>
+                           😃
+                        </button>
+                        <button
+                           style={fontSize}
+                           className="reactBtn"
+                           onClick={handleReaction}
+                           value={"Sad"}>
+                           😢
+                        </button>
+                        <button
+                           style={fontSize}
+                           className="reactBtn"
+                           onClick={handleReaction}
+                           value={"Love"}>
+                           🥰
+                        </button>
+                        <button
+                           style={fontSize}
+                           className="reactBtn"
+                           onClick={handleReaction}
+                           value={"Angry"}>
+                           😡
+                        </button>
+                        <button
+                           style={fontSize}
+                           className="reactBtn"
+                           onClick={handleReaction}
+                           value={"Gross"}>
+                           🤢
+                        </button>
+                     </span>
+                  </Popper>
+               </>
+            )}
          </div>
-      </>
+      </Card>
    )
 }

@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { API_ROOT, HEADERS, handleUpdate, colorOptions } from "../constants"
 import { useHistory } from "react-router-dom"
+import { Card, Button } from "@material-ui/core"
+import SaveTwoToneIcon from "@material-ui/icons/SaveTwoTone"
+import DeleteTwoToneIcon from "@material-ui/icons/DeleteTwoTone"
+import AssistantTwoToneIcon from "@material-ui/icons/AssistantTwoTone"
 
 export default function ProfilePage({ user, setUser, guestState }) {
    //const params = useParams().id
@@ -54,7 +58,7 @@ export default function ProfilePage({ user, setUser, guestState }) {
          ) : (
             <>
                {toggleEdit ? (
-                  <>
+                  <Card variant="outlined" className="divider">
                      <h2>Update Profile</h2>
                      <form onSubmit={submitProfileUpdate}>
                         <label htmlFor="name">Name: </label>
@@ -100,19 +104,26 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            {colorOptions}
                         </select>
                         <br />
-                        <button> Save Changes</button>
+                        <Button type="submit" variant="contained" className="floatButton">
+                           {" "}
+                           <SaveTwoToneIcon />
+                        </Button>
                      </form>
-                  </>
+                  </Card>
                ) : (
-                  <>
+                  <div className="divider">
                      <h2>User Profile for {name}</h2>
                      <ul>
                         <li>Email:{email}</li> <li>Bio: {bio}</li> <li>Age Group: {age_group} </li>
                      </ul>
-                  </>
+                  </div>
                )}
-               <button onClick={() => setToggleEdit(!toggleEdit)}>Update information!</button>
-               <button onClick={handleDelete}>Delete Account</button>
+               <Button type="submit" variant="contained" onClick={() => setToggleEdit(!toggleEdit)}>
+                  <AssistantTwoToneIcon />
+               </Button>
+               <Button type="submit" variant="contained" onClick={handleDelete}>
+                  <DeleteTwoToneIcon />
+               </Button>
             </>
          )}
       </div>
