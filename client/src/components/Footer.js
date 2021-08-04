@@ -8,7 +8,6 @@ export default function Footer() {
          <Card className="divider">
             <img alt="logo" className="logo" src="https://i.imgur.com/k47edoR.png" />
             <ul>
-               <li>est. 2021</li>
                <li>created by: Grant Cloyd </li>
                <li>
                   {" "}

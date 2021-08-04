@@ -63,7 +63,7 @@ export default function Message({ cable, userId, setViewUser }) {
                ? "🤢"
                : null}{" "}
          </button>
-         from {r.user}
+         from <img alt="reaction" className="msgImg" src={r.user_image} />
       </p>
    ))
 
@@ -79,7 +79,10 @@ export default function Message({ cable, userId, setViewUser }) {
 
    return (
       <Card className="divider">
-         <div key={cable.id}>
+         <div
+            className="padding"
+            style={{ backgroundColor: cable.user.app_color, color: cable.user.text_color }}
+            key={cable.id}>
             <p>
                <img
                   onClick={userId !== cable.user.id ? () => handleViewUser(cable.user.id) : null}
@@ -92,7 +95,7 @@ export default function Message({ cable, userId, setViewUser }) {
             <p>@ {new Date(cable.created_at).toLocaleString()} </p>
             {userId === cable.user.id ? (
                <Button
-                  className="floatLeftButton"
+                  // className="floatLeftButton"
                   type="submit"
                   variant="contained"
                   onClick={handleDeleteMessage}>
@@ -101,7 +104,7 @@ export default function Message({ cable, userId, setViewUser }) {
             ) : (
                <>
                   <Button
-                     className="floatButton"
+                     // className="floatButton"
                      type="submit"
                      variant="contained"
                      onClick={() => setOpenState(!openState)}
@@ -112,7 +115,7 @@ export default function Message({ cable, userId, setViewUser }) {
                   <Popper
                      id={`${cable.id}Reaction`}
                      anchorEl={reactionEl.current}
-                     placement="right-end"
+                     placement="right-start"
                      open={openState}>
                      <span className="reactWrapper">
                         <button

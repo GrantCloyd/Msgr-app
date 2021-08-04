@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { API_ROOT, handleCreate, HEADERS, handleUpdate, colorOptions } from "../constants"
 import { ActionCable } from "react-actioncable-provider"
-import { Card, Button } from "@material-ui/core"
+import { Card, Button, TextField } from "@material-ui/core"
 import ViewUserBox from "./ViewUserBox"
 import Message from "./Message"
 import CloseTwoToneIcon from "@material-ui/icons/CloseTwoTone"
@@ -10,6 +10,7 @@ import KeyboardBackspaceTwoToneIcon from "@material-ui/icons/KeyboardBackspaceTw
 import AssistantTwoToneIcon from "@material-ui/icons/AssistantTwoTone"
 import DeleteTwoToneIcon from "@material-ui/icons/DeleteTwoTone"
 import SaveTwoToneIcon from "@material-ui/icons/SaveTwoTone"
+import AnnouncementIcon from "@material-ui/icons/Announcement"
 
 export default function ChatPage({ userId, userName }) {
    const { id } = useParams()
@@ -189,10 +190,7 @@ export default function ChatPage({ userId, userName }) {
                   <select name="room_color" value={updateChat.room_color} onChange={handleChatEdit}>
                      {colorOptions}
                   </select>
-                  <label htmlFor="text_color">Text Color: </label>
-                  <select name="text_color" value={updateChat.text_color} onChange={handleChatEdit}>
-                     {colorOptions}
-                  </select>
+
                   <label htmlFor="description">Description: </label>
                   <input
                      onChange={handleChatEdit}
@@ -215,7 +213,7 @@ export default function ChatPage({ userId, userName }) {
                </form>
             </Card>
          ) : (
-            <Card>
+            <Card className="divider">
                {userId === roomInfo.admin.id ? (
                   <>
                      <Button
@@ -244,6 +242,8 @@ export default function ChatPage({ userId, userName }) {
                   {" "}
                   <KeyboardBackspaceTwoToneIcon />{" "}
                </Button>
+               <br />
+               <br />
                <h2>Welcome to {roomInfo.title} </h2>
                <h5>Description: {roomInfo.description}</h5>
                <h3>Location: {roomInfo.location} </h3>
@@ -261,7 +261,7 @@ export default function ChatPage({ userId, userName }) {
          </h3>
          {viewUser.name !== "" ? (
             <div className="viewerBox">
-               <Card>
+               <Card variant="outlined">
                   <Button
                      type="submit"
                      variant="contained"
@@ -278,23 +278,31 @@ export default function ChatPage({ userId, userName }) {
             </div>
          ) : null}
          <div>
-            <h3 className="messageContainer">Messages</h3>
-            <>
-               <form className="messageText" onSubmit={handleMessageSubmit}>
-                  <label htmlFor="messageText">Message: </label>
-                  <input
+            <h3>Messages</h3>
+            <form className="messageText" onSubmit={handleMessageSubmit}>
+               <Card>
+                  <TextField
+                     multiline
+                     rows={4}
+                     variant="outlined"
                      value={newMessage.content}
                      onChange={handleChange}
                      name="messageText"
                      type="textarea"
                      placeholder="Send .."
                   />
-                  <button>Send</button>
+                  <Button type="submit" variant="contained">
+                     <AnnouncementIcon />{" "}
+                  </Button>
                   {errors ? <p>{errors}</p> : null}
-               </form>
-            </>
+               </Card>
+            </form>
             <ActionCable
-               channel={{ channel: `ChatsChannel`, room_title: roomInfo.title, user: userName }}
+               channel={{
+                  channel: `ChatsChannel`,
+                  room_title: roomInfo.title,
+                  user: userName,
+               }}
                onReceived={handleReceivedChat}>
                <br />
                <div ref={messageContainer} className="messageContainer">

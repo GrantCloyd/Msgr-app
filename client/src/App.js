@@ -72,7 +72,14 @@ function App() {
                />
                <Route
                   path="/chat/:title/:id"
-                  component={() => <ChatPage userName={user.name} userId={user.id} />}
+                  component={() => (
+                     <ChatPage
+                        userName={user.name}
+                        userId={user.id}
+                        userAppColor={user.app_color}
+                        userTextColor={user.text_color}
+                     />
+                  )}
                />
 
                <Route

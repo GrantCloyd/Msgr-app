@@ -30,20 +30,20 @@ img {
 }
 
 .msgImg {
-   height: 22px;
-   width: 22px;
+   height: 25px;
+   width: 25px;
 }
 
 .messageText {
-   float: left;
    position: sticky;
-   top: 50%;
+   float: left;
+   height: 50%;
 }
 
 .viewerBox {
    float: right;
-   position: sticky;
-   top: 30%;
+   bottom: 0;
+
    padding: 5px;
    max-height: 300px;
    max-width: 300px;
@@ -52,6 +52,7 @@ img {
 .messageContainer {
    width: 50%;
    margin: auto;
+   position: relative;
 }
 .content {
    flex: 1;
@@ -118,4 +119,8 @@ img {
 
 .logo {
    float: right;
+}
+
+.padding {
+   padding: 15px;
 }

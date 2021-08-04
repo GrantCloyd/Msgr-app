@@ -5,7 +5,7 @@ class ReactionsController < ApplicationController
        reaction = Reaction.create!(reaction_params)
        render json: reaction, status: 201
      
-       ActionCable.server.broadcast "#{reaction.message.chat.title}_channel", {message: {reaction:true, id: reaction.id, message_id: reaction.message.id, user: reaction.user.name, user_id: reaction.user.id, reaction: reaction.reaction_type}}
+       ActionCable.server.broadcast "#{reaction.message.chat.title}_channel", {message: {reaction:true, id: reaction.id, message_id: reaction.message.id, user: reaction.user.name, user_id: reaction.user.id, user_image: reaction.user.image_url , reaction: reaction.reaction_type}}
     rescue ActiveRecord::RecordInvalid => e
         render json: {error: e.message}, status: 422
     end
