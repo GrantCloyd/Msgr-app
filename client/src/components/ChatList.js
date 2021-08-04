@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import { API_ROOT } from "../constants"
 import ChatLi from "./ChatLi"
 import { useHistory } from "react-router-dom"
+import { Card, Button } from "@material-ui/core"
+import RefreshTwoToneIcon from "@material-ui/icons/RefreshTwoTone"
 
 export default function ChatList({ userAgeGroup, userName }) {
    const [loading, setLoading] = useState(null)
@@ -31,10 +33,14 @@ export default function ChatList({ userAgeGroup, userName }) {
    return (
       <div>
          <h2>Available Chat Rooms : </h2>
-         <button onClick={getData}>Refresh Chat List</button>
-         {loading ? <p>Loading ...</p> : null}
-         {userAgeGroup === "Family" ? <h4>Only Showing Family friendly chat-rooms</h4> : null}
-         <ul>{userAgeGroup === "Family" ? noAdultRoomList : allRoomList}</ul>
+         <Card>
+            <Button className="floatButton" type="submit" variant="contained" onClick={getData}>
+               <RefreshTwoToneIcon />
+            </Button>
+            {loading ? <p>Loading ...</p> : null}
+            {userAgeGroup === "Family" ? <h4>Only Showing Family friendly chat-rooms</h4> : null}
+            <ul>{userAgeGroup === "Family" ? noAdultRoomList : allRoomList}</ul>
+         </Card>
       </div>
    )
 }

@@ -20,6 +20,10 @@ code {
    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+ul {
+   list-style-type: none;
+}
+
 img {
    height: 150px;
    width: 150px;
@@ -77,4 +81,17 @@ img {
 
 .chatPage {
    padding-top: 40px;
+}
+
+.floatButton {
+   margin-top: 5px;
+   margin-right: 5px;
+   float: right;
+}
+
+.divider {
+   margin: auto;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   width: 50%;
 }

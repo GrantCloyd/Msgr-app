@@ -2,9 +2,11 @@ import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
 import { API_ROOT, handleCreate, HEADERS, handleUpdate, colorOptions } from "../constants"
 import { ActionCable } from "react-actioncable-provider"
+import { Card, Button } from "@material-ui/core"
 import ViewUserBox from "./ViewUserBox"
 import Message from "./Message"
 import CloseTwoToneIcon from "@material-ui/icons/CloseTwoTone"
+import KeyboardBackspaceTwoToneIcon from "@material-ui/icons/KeyboardBackspaceTwoTone"
 
 export default function ChatPage({ userId, userName }) {
    const { id } = useParams()
@@ -165,6 +167,8 @@ export default function ChatPage({ userId, userName }) {
       handleUpdate(updateChat, "chats", id, handleErrors, handleSuccessChatUpdate)
    }
 
+   const handleBack = () => history.goBack()
+
    //let usersMap = usersInRoom.map(user => <p key={user}>{user}</p>)
    let cablesMap = cables.map(cable => (
       <Message cable={cable} setViewUser={setViewUser} key={cable.id} userId={userId} />
@@ -206,7 +210,15 @@ export default function ChatPage({ userId, userName }) {
                </form>
             </>
          ) : (
-            <>
+            <Card>
+               <Button
+                  className="floatButton"
+                  onClick={handleBack}
+                  type="submit"
+                  variant="contained">
+                  {" "}
+                  <KeyboardBackspaceTwoToneIcon />{" "}
+               </Button>
                <h2>Welcome to {roomInfo.title} </h2>
                <h5>Description: {roomInfo.description}</h5>
                <h3>Location: {roomInfo.location} </h3>
@@ -214,7 +226,7 @@ export default function ChatPage({ userId, userName }) {
                   For further questions please reach out to channel admin: {roomInfo.admin.name} at{" "}
                   <a href={`mailto:${roomInfo.admin.email}`}>{roomInfo.admin.email}</a>
                </h3>
-            </>
+            </Card>
          )}
          {userId === roomInfo.admin.id ? (
             <>
@@ -229,19 +241,20 @@ export default function ChatPage({ userId, userName }) {
          </h3>
          {viewUser.name !== "" ? (
             <div className="viewerBox">
-               <span>
-                  <h4>
-                     View User Details{" "}
-                     <button onClick={() => setViewUser(initialUserView)}>
-                        <CloseTwoToneIcon />
-                     </button>
-                  </h4>
+               <Card>
+                  <Button
+                     type="submit"
+                     variant="contained"
+                     className="floatButton"
+                     onClick={() => setViewUser(initialUserView)}>
+                     <CloseTwoToneIcon />
+                  </Button>
                   <ViewUserBox
                      reset={initialUserView}
                      setViewUser={setViewUser}
                      viewUser={viewUser}
                   />
-               </span>
+               </Card>
             </div>
          ) : null}
          <div>
