@@ -68,6 +68,7 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            type="text"
                            value={updateProfile.name}
                         />
+                        <br />
                         <label htmlFor="email">Email: </label>
                         <input
                            onChange={handleProfileUpdate}
@@ -75,6 +76,7 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            type="text"
                            value={updateProfile.email}
                         />
+                        <br />
                         <label htmlFor="bio">Bio: </label>
                         <input
                            onChange={handleProfileUpdate}
@@ -82,6 +84,7 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            type="textarea"
                            value={updateProfile.bio}
                         />
+                        <br />
                         <label htmlFor="image_url">Avatar: </label>
                         <input
                            onChange={handleProfileUpdate}
@@ -89,6 +92,7 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            type="textarea"
                            value={updateProfile.image_url}
                         />
+                        <br />
                         <label htmlFor="app_color">App Color: </label>
                         <select
                            name="app_color"
@@ -96,6 +100,7 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            onChange={handleProfileUpdate}>
                            {colorOptions}
                         </select>
+                        <br />
                         <label htmlFor="text_color">Text Color: </label>
                         <select
                            name="text_color"

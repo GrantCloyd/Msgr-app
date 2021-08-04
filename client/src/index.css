@@ -124,3 +124,12 @@ img {
 .padding {
    padding: 15px;
 }
+
+input {
+   padding: 6px;
+   margin-bottom: 5px;
+}
+
+select {
+   padding: 8px;
+}

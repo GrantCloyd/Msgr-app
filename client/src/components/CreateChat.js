@@ -43,6 +43,7 @@ export default function CreateChat({ userAgeGroup, userId, userName }) {
                   name="title"
                   placeholder="Enter Title"
                />
+               <br />
                <label htmlFor="description">Description: </label>
                <input
                   value={newChat.description}
@@ -51,6 +52,7 @@ export default function CreateChat({ userAgeGroup, userId, userName }) {
                   name="description"
                   placeholder="Enter Description"
                />
+               <br />
                <label htmlFor="location">Location: </label>
                <input
                   value={newChat.location}
@@ -59,17 +61,19 @@ export default function CreateChat({ userAgeGroup, userId, userName }) {
                   name="location"
                   placeholder="Enter Location"
                />
+               <br />
                <label htmlFor="age_group">Select Age Group: </label>
                <select value={newChat.age_group} onChange={handleUpdate} name="age_group">
                   <option>--select one--</option>
                   {userAgeGroup === "Adult" ? <option value="Adult">Adult</option> : null}
                   <option value="Family">Family</option>
                </select>
-               <Button type="submit" variant="contained">
+               <br />
+
+               <Button className="floatButton" type="submit" variant="contained">
                   <AddCircleTwoToneIcon />{" "}
                </Button>
             </form>
-            <p>*Note: Age group will determine who can access your chatroom</p>
          </Card>
       </div>
    )
