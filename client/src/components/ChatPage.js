@@ -39,10 +39,10 @@ export default function ChatPage({ userId, userName }) {
    const [newMessage, setNewMessage] = useState(initialMessage)
    const [cables, setCables] = useState([])
    const [deleted, setDeleted] = useState(false)
-   const [togglePreviousMessages, setTogglePreviousMessages] = useState(false)
+
    const [toggleEdit, setToggleEdit] = useState(false)
    const [updateChat, setUpdateChat] = useState(null)
-   const [usersInRoom, setUsersInRoom] = useState([])
+
    const [viewUser, setViewUser] = useState(initialUserView)
 
    //autoscroll feature
@@ -167,7 +167,7 @@ export default function ChatPage({ userId, userName }) {
 
    const submitChatUpdate = e => {
       e.preventDefault()
-      console.log(updateChat)
+
       handleUpdate(updateChat, "chats", id, handleErrors, handleSuccessChatUpdate)
    }
 
@@ -175,7 +175,9 @@ export default function ChatPage({ userId, userName }) {
 
    //let usersMap = usersInRoom.map(user => <p key={user}>{user}</p>)
    let cablesMap = cables.map(cable => (
-      <Message cable={cable} setViewUser={setViewUser} key={cable.id} userId={userId} />
+      <div className={userId === cable.user.id ? "msg-right" : "msg-left"}>
+         <Message cable={cable} setViewUser={setViewUser} key={cable.id} userId={userId} />
+      </div>
    ))
 
    return (
@@ -190,23 +192,28 @@ export default function ChatPage({ userId, userName }) {
                   <select name="room_color" value={updateChat.room_color} onChange={handleChatEdit}>
                      {colorOptions}
                   </select>
-
-                  <label htmlFor="description">Description: </label>
-                  <input
-                     onChange={handleChatEdit}
-                     name="description"
-                     type="text"
-                     value={updateChat.description}
-                  />
-                  <label htmlFor="location">Location: </label>
-                  <input
-                     onChange={handleChatEdit}
-                     name="location"
-                     type="textarea"
-                     value={updateChat.location}
-                  />
-
                   <br />
+                  <label htmlFor="text_color">Text & Box Color: </label>
+                  <select name="text_color" value={updateChat.text_color} onChange={handleChatEdit}>
+                     {colorOptions}
+                  </select>
+                  <div className="shift-right">
+                     <label htmlFor="description">Description: </label>
+                     <input
+                        onChange={handleChatEdit}
+                        name="description"
+                        type="text"
+                        value={updateChat.description}
+                     />
+                     <br />
+                     <label htmlFor="location">Location: </label>
+                     <input
+                        onChange={handleChatEdit}
+                        name="location"
+                        type="textarea"
+                        value={updateChat.location}
+                     />
+                  </div>
                   <Button type="submit" variant="contained">
                      <SaveTwoToneIcon />
                   </Button>
@@ -261,7 +268,7 @@ export default function ChatPage({ userId, userName }) {
          </h3>
          {viewUser.name !== "" ? (
             <div className="viewerBox">
-               <Card variant="outlined">
+               <Card>
                   <Button
                      type="submit"
                      variant="contained"
@@ -279,36 +286,43 @@ export default function ChatPage({ userId, userName }) {
          ) : null}
          <div>
             <h3>Messages</h3>
-            <form className="messageText" onSubmit={handleMessageSubmit}>
-               <Card>
-                  <TextField
-                     multiline
-                     rows={4}
-                     variant="outlined"
-                     value={newMessage.content}
-                     onChange={handleChange}
-                     name="messageText"
-                     type="textarea"
-                     placeholder="Send .."
-                  />
-                  <Button type="submit" variant="contained">
-                     <AnnouncementIcon />{" "}
-                  </Button>
-                  {errors ? <p>{errors}</p> : null}
+            <div ref={messageContainer} className="messageContainer">
+               <Card
+                  style={{
+                     backgroundColor: roomInfo.text_color,
+                  }}
+                  className="inner-divider">
+                  <ActionCable
+                     channel={{
+                        channel: `ChatsChannel`,
+                        room_title: roomInfo.title,
+                        user: userName,
+                     }}
+                     onReceived={handleReceivedChat}>
+                     <br />
+                     {cablesMap}
+                  </ActionCable>
                </Card>
-            </form>
-            <ActionCable
-               channel={{
-                  channel: `ChatsChannel`,
-                  room_title: roomInfo.title,
-                  user: userName,
-               }}
-               onReceived={handleReceivedChat}>
-               <br />
-               <div ref={messageContainer} className="messageContainer">
-                  {cablesMap}
-               </div>
-            </ActionCable>
+               <form className="messageText" onSubmit={handleMessageSubmit}>
+                  <Card>
+                     <TextField
+                        className="expander"
+                        multiline
+                        rows={3}
+                        variant="outlined"
+                        value={newMessage.content}
+                        onChange={handleChange}
+                        name="messageText"
+                        type="textarea"
+                        placeholder="Send .."
+                     />
+                     <Button className="expander" type="submit" variant="contained">
+                        <AnnouncementIcon />{" "}
+                     </Button>
+                     {errors ? <p>{errors}</p> : null}
+                  </Card>
+               </form>
+            </div>
          </div>
       </Card>
    )

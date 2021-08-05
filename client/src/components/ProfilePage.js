@@ -77,14 +77,16 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            value={updateProfile.email}
                         />
                         <br />
-                        <label htmlFor="bio">Bio: </label>
-                        <input
-                           onChange={handleProfileUpdate}
-                           name="bio"
-                           type="textarea"
-                           value={updateProfile.bio}
-                        />
-                        <br />
+                        <div className="shift-right">
+                           <label htmlFor="bio">Bio: </label>
+                           <input
+                              onChange={handleProfileUpdate}
+                              name="bio"
+                              type="textarea"
+                              value={updateProfile.bio}
+                           />
+                        </div>
+
                         <label htmlFor="image_url">Avatar: </label>
                         <input
                            onChange={handleProfileUpdate}
@@ -92,23 +94,24 @@ export default function ProfilePage({ user, setUser, guestState }) {
                            type="textarea"
                            value={updateProfile.image_url}
                         />
-                        <br />
-                        <label htmlFor="app_color">App Color: </label>
-                        <select
-                           name="app_color"
-                           value={updateProfile.app_color}
-                           onChange={handleProfileUpdate}>
-                           {colorOptions}
-                        </select>
-                        <br />
-                        <label htmlFor="text_color">Text Color: </label>
-                        <select
-                           name="text_color"
-                           value={updateProfile.text_color}
-                           onChange={handleProfileUpdate}>
-                           {colorOptions}
-                        </select>
-                        <br />
+                        <div className="shift-left">
+                           <label htmlFor="app_color">App Color: </label>
+
+                           <select
+                              name="app_color"
+                              value={updateProfile.app_color}
+                              onChange={handleProfileUpdate}>
+                              {colorOptions}
+                           </select>
+                           <br />
+                           <label htmlFor="text_color">Text Color: </label>
+                           <select
+                              name="text_color"
+                              value={updateProfile.text_color}
+                              onChange={handleProfileUpdate}>
+                              {colorOptions}
+                           </select>
+                        </div>
                         <Button type="submit" variant="contained" className="floatButton">
                            {" "}
                            <SaveTwoToneIcon />
@@ -119,7 +122,8 @@ export default function ProfilePage({ user, setUser, guestState }) {
                   <div className="divider">
                      <h2>User Profile for {name}</h2>
                      <ul>
-                        <li>Email:{email}</li> <li>Bio: {bio}</li> <li>Age Group: {age_group} </li>
+                        <li>Email:{email}</li> <br /> <li>Bio: {bio}</li> <br />
+                        <li>Age Group: {age_group}</li>
                      </ul>
                   </div>
                )}

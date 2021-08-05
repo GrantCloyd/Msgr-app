@@ -23,6 +23,8 @@ function App() {
       text_color: "",
    }
    const [user, setUser] = useState(initialUserState)
+   const styleObj = { backgroundColor: user.app_color, color: user.text_color }
+
    if (user.name === "Guest")
       return (
          <Switch>
@@ -33,7 +35,7 @@ function App() {
 
    return (
       <Switch>
-         <div style={{ backgroundColor: user.app_color, color: user.text_color }} className="App">
+         <div style={styleObj} className="App">
             <Header />
             <div className="content">
                <NavBar
@@ -41,6 +43,7 @@ function App() {
                   userImage={user.image_url}
                   setUser={setUser}
                   guestState={initialUserState}
+                  styleObj={styleObj}
                />
 
                <Route

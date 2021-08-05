@@ -34,7 +34,7 @@ export default function Message({ cable, userId, setViewUser }) {
    }
 
    const handleErrors = e => console.log(e)
-   const handleSucess = e => console.log(e)
+   const handleSucess = e => e
 
    const handleReaction = e => {
       const newReact = {
@@ -78,7 +78,7 @@ export default function Message({ cable, userId, setViewUser }) {
    }
 
    return (
-      <Card className="divider">
+      <Card style={{ borderRadius: "20%" }} className="divider">
          <div
             className="padding"
             style={{ backgroundColor: cable.user.app_color, color: cable.user.text_color }}
@@ -90,9 +90,10 @@ export default function Message({ cable, userId, setViewUser }) {
                   alt={`${cable.user.name}`}
                   src={cable.user.image_url}
                />{" "}
-               {cable.user.name} : {cable.content} {cable.reactions.length > 0 ? reactMap : null}
+               {cable.user.name}
             </p>{" "}
-            <p>@ {new Date(cable.created_at).toLocaleString()} </p>
+            <p>{cable.content} </p> {cable.reactions.length > 0 ? reactMap : null}
+            <p className="font-small">@ {new Date(cable.created_at).toLocaleString()} </p>
             {userId === cable.user.id ? (
                <Button
                   // className="floatLeftButton"

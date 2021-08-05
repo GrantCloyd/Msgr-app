@@ -38,6 +38,7 @@ export default function SignUpPage() {
    return (
       <div>
          <Card className="signUpLogIn">
+            <img alt="logo" src="https://i.imgur.com/k47edoR.png" />
             <h2>Sign Up!</h2>
             {errors ? <p>{errors}</p> : null}
             <form onSubmit={handleSubmit}>
@@ -50,6 +51,7 @@ export default function SignUpPage() {
                   name="name"
                   placeholder="Name"
                />
+               <br />
                <label htmlFor="email">Email: </label>
                <input
                   onChange={handleUpdate}
@@ -59,30 +61,39 @@ export default function SignUpPage() {
                   name="email"
                   placeholder="Email Address"
                />
-               <label htmlFor="password">Password: </label>
-               <input
-                  value={newSignUp.password}
-                  onChange={handleUpdate}
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-               />
-               <label htmlFor="confirmPassword">Confirm Password: </label>
-               <input
-                  value={newSignUp.confirmPassword}
-                  onChange={handleUpdate}
-                  autocomplete="password"
-                  type="password"
-                  name="confirmPassword"
-                  placeholder="Re-enter your password"
-               />
-               <label htmlFor="age_group">Select Age Group: </label>
-               <select value={newSignUp.age_group} onChange={handleUpdate} name="age_group">
-                  Age Group
-                  <option>--select one--</option>
-                  <option value="Family">Family</option>
-                  <option value="Adult">Adult</option>
-               </select>
+               <br />
+               <div className="inner-divider">
+                  <label htmlFor="password">Password: </label>
+                  <input
+                     value={newSignUp.password}
+                     onChange={handleUpdate}
+                     type="password"
+                     name="password"
+                     placeholder="Password"
+                  />
+                  <br />
+                  <div className="shift-left">
+                     <label htmlFor="confirmPassword">Confirm Password: </label>
+                     <input
+                        value={newSignUp.confirmPassword}
+                        onChange={handleUpdate}
+                        autocomplete="password"
+                        type="password"
+                        name="confirmPassword"
+                        placeholder="Re-enter your password"
+                     />
+
+                     <br />
+                     <label htmlFor="age_group">Select Age Group: </label>
+                     <select value={newSignUp.age_group} onChange={handleUpdate} name="age_group">
+                        Age Group
+                        <option>--select one--</option>
+                        <option value="Family">Family</option>
+                        <option value="Adult">Adult</option>
+                     </select>
+                  </div>
+               </div>
+               <br />
                <Button type="submit" color="primary" variant="contained">
                   Submit
                </Button>

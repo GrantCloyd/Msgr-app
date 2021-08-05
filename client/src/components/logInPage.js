@@ -28,7 +28,7 @@ export default function LogInPage({ user, setUser }) {
          ) : (
             <>
                <Card className="signUpLogIn">
-                  <img alt="logo" className="logo" src="https://i.imgur.com/k47edoR.png" />
+                  <img alt="logo" src="https://i.imgur.com/k47edoR.png" />
                   <h2>Log In to start chatting</h2>
                   {errors ? <p>{errors}</p> : null}
                   <form onSubmit={handleSubmit}>
@@ -41,14 +41,16 @@ export default function LogInPage({ user, setUser }) {
                         placeholder="Email Address"
                      />
                      <br />
-                     <label htmlFor="password">Password: </label>
-                     <input
-                        value={newLogin.password}
-                        onChange={handleUpdate}
-                        type="password"
-                        name="password"
-                        placeholder="Password"
-                     />
+                     <div className="inner-divider">
+                        <label htmlFor="password">Password: </label>
+                        <input
+                           value={newLogin.password}
+                           onChange={handleUpdate}
+                           type="password"
+                           name="password"
+                           placeholder="Password"
+                        />
+                     </div>
                      <br />
                      <Button type="submit" color="primary" variant="contained">
                         Submit

@@ -7,7 +7,7 @@ import ExitToAppTwoToneIcon from "@material-ui/icons/ExitToAppTwoTone"
 import AddCircleTwoToneIcon from "@material-ui/icons/AddCircleTwoTone"
 import { Button, Card } from "@material-ui/core"
 
-export default function NavBar({ userId, setUser, guestState, userImage }) {
+export default function NavBar({ userId, setUser, guestState, userImage, styleObj }) {
    const history = useHistory()
 
    const handleLogOut = () => {
@@ -16,7 +16,7 @@ export default function NavBar({ userId, setUser, guestState, userImage }) {
    }
    return (
       <nav>
-         <Card>
+         <Card style={styleObj}>
             {" "}
             <Button type="submit" variant="contained">
                <NavLink to="/">
