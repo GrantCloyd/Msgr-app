@@ -14,7 +14,7 @@ export default function ChatList({ userAgeGroup, userName, userId }) {
       const res = await fetch(`${API_ROOT}/chats`)
       const data = await res.json()
       setChatRooms(data)
-      console.log(data)
+
       setLoading(null)
    }
 

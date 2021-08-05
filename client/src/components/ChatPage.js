@@ -84,6 +84,17 @@ export default function ChatPage({ userId, userName }) {
    const handleMessageSubmit = e => {
       e.preventDefault()
       setErrors(null)
+      if (roomInfo.age_group === "Family") {
+         const bannedWords = [/s+h+i+t+/gi, /f+u+c+k+/gi, /b+i+t+c+h+/gi]
+         bannedWords.forEach(word => {
+            if (newMessage.content.toLowerCase().match(word)) {
+               console.log("in here")
+
+               let update = newMessage.content.replaceAll(word, "****")
+               newMessage.content = update
+            }
+         })
+      }
       handleCreate(newMessage, "messages", setErrors, handleSuccess)
       setNewMessage(initialMessage)
    }
@@ -176,7 +187,13 @@ export default function ChatPage({ userId, userName }) {
    //let usersMap = usersInRoom.map(user => <p key={user}>{user}</p>)
    let cablesMap = cables.map(cable => (
       <div className={userId === cable.user.id ? "msg-right" : "msg-left"}>
-         <Message cable={cable} setViewUser={setViewUser} key={cable.id} userId={userId} />
+         <Message
+            chatAG={roomInfo.age_group}
+            cable={cable}
+            setViewUser={setViewUser}
+            key={cable.id}
+            userId={userId}
+         />
       </div>
    ))
 

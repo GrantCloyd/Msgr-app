@@ -4,7 +4,7 @@ import { Popper, Card, Button } from "@material-ui/core"
 import DeleteTwoToneIcon from "@material-ui/icons/DeleteTwoTone"
 import EmojiEmotionsTwoToneIcon from "@material-ui/icons/EmojiEmotionsTwoTone"
 
-export default function Message({ cable, userId, setViewUser }) {
+export default function Message({ chatAG, cable, userId, setViewUser }) {
    const reactionEl = useRef()
    const [openState, setOpenState] = useState(false)
    const fontSize = { fontSize: 20 }
