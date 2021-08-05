@@ -41,7 +41,7 @@ export default function LogInPage({ user, setUser }) {
                         placeholder="Email Address"
                      />
                      <br />
-                     <div className="inner-divider">
+                     <div className="shift-left-pw">
                         <label htmlFor="password">Password: </label>
                         <input
                            value={newLogin.password}

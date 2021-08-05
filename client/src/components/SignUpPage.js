@@ -62,7 +62,7 @@ export default function SignUpPage() {
                   placeholder="Email Address"
                />
                <br />
-               <div className="inner-divider">
+               <div className="shift-left-pw">
                   <label htmlFor="password">Password: </label>
                   <input
                      value={newSignUp.password}
@@ -72,7 +72,7 @@ export default function SignUpPage() {
                      placeholder="Password"
                   />
                   <br />
-                  <div className="shift-left">
+                  <div className="shift-left-pw-conf">
                      <label htmlFor="confirmPassword">Confirm Password: </label>
                      <input
                         value={newSignUp.confirmPassword}
