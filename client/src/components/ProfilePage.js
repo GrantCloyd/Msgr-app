@@ -32,7 +32,6 @@ export default function ProfilePage({ user, setUser, guestState }) {
    }
 
    function handleProfileUpdate(e) {
-      console.log(e.target.value)
       setUpdateProfile({ ...updateProfile, [e.target.name]: e.target.value })
    }
 

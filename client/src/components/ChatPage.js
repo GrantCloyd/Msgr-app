@@ -88,8 +88,6 @@ export default function ChatPage({ userId, userName }) {
          const bannedWords = [/s+h+i+t+/gi, /f+u+c+k+/gi, /b+i+t+c+h+/gi]
          bannedWords.forEach(word => {
             if (newMessage.content.toLowerCase().match(word)) {
-               console.log("in here")
-
                let update = newMessage.content.replaceAll(word, "****")
                newMessage.content = update
             }
