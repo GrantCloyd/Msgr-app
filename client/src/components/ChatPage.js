@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react"
 import { useParams, useHistory } from "react-router-dom"
-import { API_ROOT, handleCreate, HEADERS, handleUpdate, colorOptions } from "../constants"
+import { API_ROOT, handleCreate, HEADERS, handleUpdate } from "../constants"
 import { ActionCable } from "react-actioncable-provider"
 import { Card, Button, TextField } from "@material-ui/core"
 import ViewUserBox from "./ViewUserBox"
@@ -205,15 +205,6 @@ export default function ChatPage({ userId, userName }) {
             <Card>
                <h2>Update Profile</h2>
                <form onSubmit={submitChatUpdate}>
-                  <label htmlFor="room_color">Room Color: </label>
-                  <select name="room_color" value={updateChat.room_color} onChange={handleChatEdit}>
-                     {colorOptions}
-                  </select>
-                  <br />
-                  <label htmlFor="text_color">Text & Box Color: </label>
-                  <select name="text_color" value={updateChat.text_color} onChange={handleChatEdit}>
-                     {colorOptions}
-                  </select>
                   <div className="shift-right">
                      <label htmlFor="description">Description: </label>
                      <input
@@ -231,6 +222,20 @@ export default function ChatPage({ userId, userName }) {
                         value={updateChat.location}
                      />
                   </div>
+                  <label htmlFor="room_color">Room Color: </label>
+                  <input
+                     type="color"
+                     name="room_color"
+                     value={updateChat.room_color}
+                     onChange={handleChatEdit}></input>
+                  <br />
+                  <label htmlFor="text_color">Text & Box Color: </label>
+                  <input
+                     type="color"
+                     name="text_color"
+                     value={updateChat.text_color}
+                     onChange={handleChatEdit}></input>
+                  <br />
                   <Button type="submit" variant="contained">
                      <SaveTwoToneIcon />
                   </Button>

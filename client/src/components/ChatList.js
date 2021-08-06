@@ -38,7 +38,7 @@ export default function ChatList({ userAgeGroup, userName, userId }) {
                <RefreshTwoToneIcon />
             </Button>
             {loading ? <p>Loading ...</p> : null}
-            {userAgeGroup === "Family" ? <h4>Only Showing Family friendly chat-rooms</h4> : null}
+            {userAgeGroup === "Family" ? <h4>Only displaying family friendly chat-rooms</h4> : null}
             <ul>{userAgeGroup === "Family" ? noAdultRoomList : allRoomList}</ul>
          </Card>
       </div>

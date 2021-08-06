@@ -78,7 +78,7 @@ export default function Message({ chatAG, cable, userId, setViewUser }) {
    }
 
    return (
-      <Card style={{ borderRadius: "20%" }} className="divider">
+      <Card variant="outlined" style={{ borderRadius: "20%" }} className="divider">
          <div
             className="padding"
             style={{ backgroundColor: cable.user.app_color, color: cable.user.text_color }}

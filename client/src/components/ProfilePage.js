@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { API_ROOT, HEADERS, handleUpdate, colorOptions } from "../constants"
+import { API_ROOT, HEADERS, handleUpdate } from "../constants"
 import { useHistory } from "react-router-dom"
 import { Card, Button } from "@material-ui/core"
 import SaveTwoToneIcon from "@material-ui/icons/SaveTwoTone"
@@ -97,20 +97,18 @@ export default function ProfilePage({ user, setUser, guestState }) {
                         <div className="shift-left">
                            <label htmlFor="app_color">App Color: </label>
 
-                           <select
+                           <input
+                              type="color"
                               name="app_color"
                               value={updateProfile.app_color}
-                              onChange={handleProfileUpdate}>
-                              {colorOptions}
-                           </select>
+                              onChange={handleProfileUpdate}></input>
                            <br />
                            <label htmlFor="text_color">Text Color: </label>
-                           <select
+                           <input
+                              type="color"
                               name="text_color"
                               value={updateProfile.text_color}
-                              onChange={handleProfileUpdate}>
-                              {colorOptions}
-                           </select>
+                              onChange={handleProfileUpdate}></input>
                         </div>
                         <Button type="submit" variant="contained" className="floatButton">
                            {" "}
@@ -121,6 +119,7 @@ export default function ProfilePage({ user, setUser, guestState }) {
                ) : (
                   <div className="divider">
                      <h2>User Profile for {name}</h2>
+
                      <ul>
                         <li>Email:{email}</li> <br /> <li>Bio: {bio}</li> <br />
                         <li>Age Group: {age_group}</li>
