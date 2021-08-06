@@ -4,7 +4,7 @@ import { API_ROOT, handleCreate, HEADERS, handleUpdate } from "../constants"
 import { ActionCable } from "react-actioncable-provider"
 import { Card, Button, TextField } from "@material-ui/core"
 import ViewUserBox from "./ViewUserBox"
-import Message from "./Message"
+import MessageB from "./MessageB"
 import CloseTwoToneIcon from "@material-ui/icons/CloseTwoTone"
 import KeyboardBackspaceTwoToneIcon from "@material-ui/icons/KeyboardBackspaceTwoTone"
 import AssistantTwoToneIcon from "@material-ui/icons/AssistantTwoTone"
@@ -187,7 +187,7 @@ export default function ChatPage({ userId, userName }) {
    //let usersMap = usersInRoom.map(user => <p key={user}>{user}</p>)
    let cablesMap = cables.map(cable => (
       <div className={userId === cable.user.id ? "msg-right" : "msg-left"}>
-         <Message
+         <MessageB
             chatAG={roomInfo.age_group}
             cable={cable}
             setViewUser={setViewUser}
