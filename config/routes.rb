@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get '/whatever', to: "application#whatever"
   resources :reactions
   resources :log_in
   resources :chats

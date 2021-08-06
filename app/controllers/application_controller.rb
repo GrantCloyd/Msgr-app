@@ -10,4 +10,9 @@ class ApplicationController < ActionController::API
   # end
 
 
+  def whatever 
+   render json: {message: "Whatever" } 
+  end
+
+
 end
