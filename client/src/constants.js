@@ -1,4 +1,4 @@
-export const API_ROOT = "https://https://infinite-cove-97966.herokuapp.com/"
+export const API_ROOT = "https://infinite-cove-97966.herokuapp.com"
 export const API_WS_ROOT = "ws://https://infinite-cove-97966.herokuapp.com/cable"
 export const HEADERS = {
    "Content-Type": "application/json",
