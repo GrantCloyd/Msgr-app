@@ -1,5 +1,5 @@
-export const API_ROOT = "https://ec2-44-196-250-191.compute-1.amazonaws.com/d10i6kvjdp9s10"
-export const API_WS_ROOT = "ws://ec2-44-196-250-191.compute-1.amazonaws.com/d10i6kvjdp9s10/cable"
+export const API_ROOT = "https://https://infinite-cove-97966.herokuapp.com/"
+export const API_WS_ROOT = "ws://https://infinite-cove-97966.herokuapp.com/"
 export const HEADERS = {
    "Content-Type": "application/json",
    Accept: "application/json",
