@@ -1,5 +1,7 @@
-export const API_ROOT = "https://ec2-44-196-250-191.compute-1.amazonaws.com"
-export const API_WS_ROOT = "ws://ec2-44-196-250-191.compute-1.amazonaws.com/cable"
+export const API_ROOT =
+   "postgres://yfnuzdfjffbhah:394c36ab4f54a85b020b81c2aa6284cd658e325d79045a19cf3bd1b2fafd5d5a@ec2-44-196-250-191.compute-1.amazonaws.com:5432/d10i6kvjdp9s10"
+export const API_WS_ROOT =
+   "ws://postgres://yfnuzdfjffbhah:394c36ab4f54a85b020b81c2aa6284cd658e325d79045a19cf3bd1b2fafd5d5a@ec2-44-196-250-191.compute-1.amazonaws.com:5432/d10i6kvjdp9s10/cable"
 export const HEADERS = {
    "Content-Type": "application/json",
    Accept: "application/json",
