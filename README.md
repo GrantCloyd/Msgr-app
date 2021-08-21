@@ -40,5 +40,5 @@ You can use the following commands to run the application:
 
 ## Acknowledgements
 
-This application was created with Material UI and ActionCableProvider as well as with Redis, ActionCable, PostgreSQL, BCrypt, and ActiveRecordSerializers 
+This application was created with Material UI and ActionCableProvider as well as with Redis, ActionCable, PostgreSQL, BCrypt, and ActiveRecordSerializers. The logo was created with Canva's online tools. 
 
