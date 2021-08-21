@@ -40,5 +40,5 @@ You can use the following commands to run the application:
 
 ## Acknowledgements
 
-This application was created with Material UI and ActionCableProvider 
+This application was created with Material UI and ActionCableProvider as well as with Redis, ActionCable, PostgreSQL, BCrypt, and ActiveRecordSerializers 
 
